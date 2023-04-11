@@ -1,7 +1,5 @@
-
 /*Import Poppins Font*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   padding: 0;
@@ -170,8 +168,7 @@ header {
     width: 80%;
   }
 }
-#menu-icon
-{
+#menu-icon {
   color: var(--main-color);
 }
 
@@ -186,7 +183,6 @@ header {
 }
 
 .top-hr {
-
   background-color: var(--bg-color);
   height: 8px;
   width: 35%;
@@ -199,8 +195,8 @@ header {
   color: var(--main-color);
   text-align: center;
   margin: 5% auto 3% 0;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 5rem
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5rem;
 }
 
 .triangle-img {
@@ -222,12 +218,11 @@ header {
   margin: auto;
 }
 
-.middle-container img{
+.middle-container img {
   display: block;
   width: 100%;
   height: auto;
 }
-
 
 .middle-text {
   position: absolute;
@@ -247,7 +242,102 @@ header {
 .mission-img {
   display: block;
   margin: 5% auto 0 auto;
-  width: 70%;
+  width: 90%;
+}
+
+.prize-div,
+.visiting-div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 76%;
+}
+
+.prize-text,
+.visiting-text,
+.visiting-text2 {
+  font-weight: bolder;
+}
+
+.divider {
+  border-bottom: goldenrod 10px solid;
+  width: 100%;
+}
+
+#prizeCarousel,
+#prizeSmaller {
+  width: 76%;
+}
+
+#prizeCarousel {
+  margin-bottom: 20px;
+}
+
+.bigger {
+  width: 100%;
+  height: 400px;
+}
+
+.smaller {
+  width: 49%;
+  height: 200px;
+}
+
+.country-gallery {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 90%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  transition: transform 0.2s;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-container {
+  background-image: url("./images/Layer.jpg");
+  background-size: cover;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.fa-star {
+  color: #ffcc00;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center; /* This centers the items vertically */
+}
+
+.d-flex h5 {
+  color: white;
+}
+
+.card-body p {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+.card-border {
+  border: none;
+}
+
+footer {
+  margin-top: 30px;
 }
 
 /*Responsive rules for the smaller screens*/
@@ -264,7 +354,6 @@ header {
   }
 
   .top-hr {
-
     background-color: var(--bg-color);
     height: 3px;
     width: 35%;
@@ -279,10 +368,17 @@ header {
     transition: 0.2s;
   }
 
-  .mission-img{
+  .mission-img {
     width: 80%;
   }
+
+  .bigger {
+    width: 100%;
+    height: 200px;
+  }
+
+  .smaller {
+    width: 49%;
+    height: 100px;
+  }
 }
-
-
- 
