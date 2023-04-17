@@ -196,35 +196,93 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm image-container">
-            <img
-              class="bd-placeholder-img card-img-top"
-              width="100%"
-              height="250"
-              src="./images/GHANA 1.png"
-              alt="Ghana"
-            />
+            <button type="button" class="btn">
+              <img
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="250"
+                src="./images/GHANA 1.png"
+                alt="Ghana"
+              />
+            </button>
           </div>
         </div>
+
+        <!-- Nigeria -->
         <div class="col">
           <div class="card shadow-sm image-container">
-            <img
-              class="bd-placeholder-img card-img-top"
-              width="100%"
-              height="250"
-              src="./images/NIGERIA 1.png"
-              alt="Nigeria"
-            />
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <img
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="250"
+                src="./images/NIGERIA 1.png"
+                alt="Nigeria"
+              />
+            </button>
           </div>
         </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-4 text-center" id="exampleModalLabel">
+                  TRIBAL GATEWAY AIRPORT CONCIERGE SERVICES
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-center">
+                  <a href="transport.html" class="btn btn-secondary">
+                    Airport Transportation Services
+                  </a>
+                </p>
+                <p class="text-center">
+                  <a href="" class="btn btn-secondary">Airport Escort</a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rwanda -->
         <div class="col">
           <div class="card shadow-sm image-container">
-            <img
-              class="bd-placeholder-img card-img-top"
-              width="100%"
-              height="250"
-              src="./images/RWANDA 1.png"
-              alt="Rwanda"
-            />
+            <button type="button" class="btn">
+              <img
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="250"
+                src="./images/RWANDA 1.png"
+                alt="Rwanda"
+              />
+            </button>
           </div>
         </div>
       </div>
@@ -309,6 +367,7 @@
       </div>
     </div>
 
+    <!-- footer -->
     <footer class="container">
       <p class="copyright">Copyright Tribal Gateway &COPY; 2023</p>
     </footer>
