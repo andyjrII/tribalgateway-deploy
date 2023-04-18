@@ -27,7 +27,7 @@ body {
 }
 
 .header-content {
-  height: 700px;
+  height: 730px;
   width: 100%;
   background-color: #000000;
 }
@@ -255,7 +255,7 @@ header {
   text-align: center;
   margin: 5% auto 3% 0;
   font-family: "Times New Roman", Times, serif;
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
 .triangle-img {
@@ -541,4 +541,8 @@ hr {
     width: 100%;
     background-color: #000000;
   }
+}
+
+.dropdown-menu {
+  z-index: 9999;
 }
