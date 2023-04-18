@@ -126,4 +126,12 @@ armedCheckbox.addEventListener("change", () => {
     total = additionalCost + transportation + security;
     totalStrong.textContent = `$${total}`;
   }
+
+  if (!armedCheckbox.checked && armed != 0) {
+    armed = parseInt(armedCheckbox.value);
+    security = security - armed;
+    securitySpan.textContent = `$${security}`;
+    total = additionalCost + transportation + security;
+    totalStrong.textContent = `$${total}`;
+  }
 });
