@@ -126,13 +126,21 @@ armedCheckbox.addEventListener("change", () => {
     total = additionalCost + transportation + security;
     totalStrong.textContent = `$${total}`;
   }
+
+  if (!armedCheckbox.checked && armed != 0) {
+    armed = parseInt(armedCheckbox.value);
+    security = security - armed;
+    securitySpan.textContent = `$${security}`;
+    total = additionalCost + transportation + security;
+    totalStrong.textContent = `$${total}`;
+  }
 });
 
 //Dropdown menu function
 var imageLink = document.getElementById("image-link");
 var dropdownMenu = document.getElementById("dropdown-menu");
 
-imageLink.addEventListener("click", function(event) {
+imageLink.addEventListener("click", function (event) {
   event.preventDefault();
   dropdownMenu.classList.toggle("hidden");
 });
@@ -140,7 +148,7 @@ imageLink.addEventListener("click", function(event) {
 // Hide the dropdown menu when a menu option is clicked
 var options = dropdownMenu.getElementsByTagName("option");
 for (var i = 0; i < options.length; i++) {
-  options[i].addEventListener("click", function() {
+  options[i].addEventListener("click", function () {
     dropdownMenu.classList.add("hidden");
   });
 }

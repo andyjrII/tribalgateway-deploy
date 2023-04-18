@@ -88,252 +88,263 @@
         </p>
       </div>
 
-      <div class="row g-5">
-        <!-- cart -->
+      <!-- Transport Services form -->
 
-        <div class="col-md-5 col-lg-4 order-md-last">
-          <h4 class="d-flex justify-content-between align-items-center mb-3">
-            <span class="text-primary">Your cart</span>
-          </h4>
-          <ul class="list-group mb-3">
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 class="my-0">Transportation</h6>
-              </div>
-              <span class="text-muted" id="transportation">$0</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 class="my-0">Additional Cost</h6>
-              </div>
-              <span class="text-muted" id="additional-cost">$0</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 class="my-0">Security</h6>
-              </div>
-              <span class="text-muted" id="security">$0</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Total (USD)</span>
-              <strong id="total">$0</strong>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Transport Services form -->
-
-        <div class="col-md-7 col-lg-8 transport-form">
+      <div class="row">
+        <div class="col-lg-12 transport-form shadow-lg rounded">
           <form class="needs-validation">
             <div class="row g-3">
-              <div class="col-sm-5">
-                <label class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" required />
-                <div class="invalid-feedback">Valid Name is required.</div>
-              </div>
-
-              <div class="col-sm-3">
-                <label class="form-label">Phone Number</label>
-                <input type="tel" class="form-control" required />
-                <div class="invalid-feedback">
-                  Valid Phone Number is required.
+              <div class="col-sm-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap"> Name </span>
+                  <input type="text" class="form-control" id="name" required />
+                  <div class="invalid-feedback">Valid Name is required.</div>
                 </div>
               </div>
 
               <div class="col-sm-4">
-                <label class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="email@example.com"
-                />
-                <div class="invalid-feedback">
-                  Please enter a valid Email address for shipping updates.
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Phone#
+                  </span>
+                  <input type="tel" class="form-control" required />
+                  <div class="invalid-feedback">
+                    Valid Phone Number is required.
+                  </div>
                 </div>
               </div>
 
-              <div class="col-sm-3">
-                <label class="form-label">Date of Arrival</label>
-                <input type="date" class="form-control" required />
-                <div class="invalid-feedback">Your username is required.</div>
+              <div class="col-sm-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Email
+                  </span>
+                  <input type="email" class="form-control" />
+                  <div class="invalid-feedback">
+                    Please enter a valid Email address for shipping updates.
+                  </div>
+                </div>
               </div>
 
-              <div class="col-sm-3">
-                <label class="form-label">Time of Arrival</label>
-                <input type="time" class="form-control" required />
-                <div class="invalid-feedback">
-                  Please enter a valid email address for shipping updates.
+              <div class="col-sm-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Date of Arrival
+                  </span>
+                  <input type="date" class="form-control" required />
+                  <div class="invalid-feedback">
+                    Date of arrival is required.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Time of Arrival
+                  </span>
+                  <input type="time" class="form-control" required />
+                  <div class="invalid-feedback">
+                    Time of arrival is required.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Date of Departure
+                  </span>
+                  <input type="date" class="form-control" required />
+                  <div class="invalid-feedback">
+                    Date of your departure is required.
+                  </div>
                 </div>
               </div>
 
               <div class="col-sm-6">
-                <label class="form-label">Airline</label>
-                <input type="text" class="form-control" required />
-                <div class="invalid-feedback">
-                  Please enter the name of your Airline.
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Airline
+                  </span>
+                  <input type="text" class="form-control" required />
+                  <div class="invalid-feedback">
+                    Please enter the name of your Airline.
+                  </div>
                 </div>
               </div>
 
-              <div class="col-sm-3">
-                <label class="form-label">Date of Departure</label>
-                <input type="date" class="form-control" required />
-                <div class="invalid-feedback">
-                  Please enter the Date of your Departure.
+              <div class="col-sm-6">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    How many persons will be arriving
+                  </span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="1"
+                    min="1"
+                    max="99"
+                    required
+                  />
+                  <div class="invalid-feedback">Please a valid number.</div>
                 </div>
               </div>
 
-              <div class="col-sm-5">
-                <label class="form-label">
-                  How many persons will be arriving:
-                </label>
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="0"
-                  min="1"
-                  max="99"
-                  required
-                />
-                <div class="invalid-feedback">Please a valid number.</div>
+              <div class="col-auto">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    How many pieces of luggage will you have? If you need a sub
+                    or van then there may be an extra charge:
+                  </span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="0"
+                    min="1"
+                    max="99"
+                    required
+                  />
+                  <div class="invalid-feedback">Please a valid number.</div>
+                </div>
               </div>
 
-              <div class="col-sm-12">
-                <label class="form-label">
-                  How many pieces of luggage will you have? If you need a sub or
-                  van then there may be an extra charge:
-                </label>
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="0"
-                  min="1"
-                  max="99"
-                  required
-                />
-                <div class="invalid-feedback">Please a valid number.</div>
-              </div>
-
-              <div class="my-3">
-                <label class="form-label">
+              <div class="input-group mb-3">
+                <span class="input-group-text bg-dark text-wrap">
                   Will you need the driver to make several stops along the way?
                   If so then it's an additional $15.
-                </label>
-                <div class="form-check">
-                  <input
-                    type="radio"
-                    class="form-check-input"
-                    name="several-stops"
-                    id="several-stops"
-                    value="15"
-                  />
-                  <label class="form-check-label">Yes</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    type="radio"
-                    class="form-check-input"
-                    name="several-stops"
-                    id="no-stops"
-                    value="0"
-                    checked
-                  />
-                  <label class="form-check-label">No, thank you</label>
+                </span>
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="several-stops"
+                  id="several-stops"
+                  value="15"
+                />
+                <label class="btn btn-primary" for="several-stops">Yes</label>
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="several-stops"
+                  id="no-stops"
+                  value="0"
+                  checked
+                />
+                <label class="btn btn-primary" for="no-stops">No</label>
+              </div>
+
+              <div class="col-auto">
+                <div class="input-group mb-3">
+                  <label
+                    class="input-group-text bg-dark text-wrap"
+                    for="driver-service"
+                  >
+                    I need driver service for
+                  </label>
+                  <select
+                    class="form-select driver-service"
+                    id="driver-service"
+                  >
+                    <option value="0">Choose...</option>
+                    <option value="60">Arrival Only $60</option>
+                    <option value="60">Departure Only $60</option>
+                    <option value="115">Both Arrival and Departure $115</option>
+                  </select>
                 </div>
               </div>
 
-              <div class="col-md-5">
-                <label class="form-label">I need driver service for:</label>
-                <select class="form-select driver-service">
-                  <option value="0">Choose...</option>
-                  <option value="60">Arrival Only $60</option>
-                  <option value="60">Departure Only $60</option>
-                  <option value="115">Both Arrival and Departure $115</option>
-                </select>
-              </div>
-
-              <div class="col-sm-12">
-                <label class="form-label">
-                  What is the address of your destination. If it is more than
-                  50km from the airport there may be additional charges.
-                </label>
-                <input type="text" class="form-control" required />
-                <div class="invalid-feedback">Please a valid number.</div>
+              <div class="input-group mb-0">
+                <div class="col-sm-12">
+                  <span class="input-group-text bg-dark text-wrap">
+                    What is the address of your destination. If it is more than
+                    50km from the airport there may be additional charges.
+                  </span>
+                </div>
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" required />
+                  <div class="invalid-feedback">Please a valid number.</div>
+                </div>
               </div>
 
               <hr class="my-4" />
 
               <h4 class="mb-3">Emergency Contact in Home Country:</h4>
 
-              <div class="col-sm-7">
-                <label class="form-label">Name</label>
-                <input type="text" class="form-control" />
+              <div class="col-sm-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap"> Name </span>
+                  <input type="text" class="form-control" />
+                </div>
               </div>
-              <div class="col-sm-5">
-                <label class="form-label">Phone Number</label>
-                <input type="tel" class="form-control" />
+
+              <div class="col-sm-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Phone#
+                  </span>
+                  <input type="tel" class="form-control" />
+                </div>
               </div>
 
               <hr class="my-4" />
 
               <h4 class="mb-3">Security</h4>
 
-              <div class="my-3">
-                <label class="form-label">
+              <div class="input-group mb-3">
+                <span class="input-group-text bg-dark text-wrap">
                   Would you like to have a security officer to escort you during
                   your stay?
-                </label>
-                <div class="form-check">
-                  <input
-                    type="radio"
-                    class="form-check-input"
-                    name="security"
-                    value="no"
-                    id="security-no"
-                  />
-                  <label class="form-check-label">No</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    type="radio"
-                    class="form-check-input"
-                    name="security"
-                    value="yes"
-                    id="security-yes"
-                    checked
-                  />
-                  <label class="form-check-label">Yes</label>
-                </div>
+                </span>
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="security"
+                  id="security-no"
+                  value="no"
+                />
+                <label class="btn btn-primary" for="security-no">No</label>
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="security"
+                  id="security-yes"
+                  value="yes"
+                  checked
+                />
+                <label class="btn btn-primary" for="security-yes">Yes</label>
               </div>
 
-              <div class="my-3 officers-box">
-                <div class="form-check">
+              <div class="officers-box">
+                <div class="input-group mb-3">
                   <input
                     type="radio"
-                    class="form-check-input"
+                    class="btn-check"
                     name="officer"
-                    value="40"
                     id="private"
+                    value="40"
                   />
-                  <label class="form-check-label">
+                  <label class="btn btn-primary" for="private">
                     Private Officer $40 daily
                   </label>
-                </div>
-                <div class="form-check">
                   <input
                     type="radio"
-                    class="form-check-input"
+                    class="btn-check"
                     name="officer"
-                    value="60"
                     id="police"
+                    value="60"
                   />
-                  <label class="form-check-label">Police Officer $60</label>
+                  <label class="btn btn-primary" for="police">
+                    Police Officer $60
+                  </label>
                 </div>
-                <div class="form-check">
+
+                <div class="form-check form-switch col-sm-12">
                   <input
-                    type="checkbox"
                     class="form-check-input"
-                    value="75"
+                    type="checkbox"
+                    role="switch"
                     id="armed"
+                    value="75"
                     disabled
                   />
                   <label class="form-check-label" for="armed">
@@ -345,14 +356,44 @@
 
               <hr class="my-4" />
 
-              <button class="w-25 btn btn-primary btn-lg" type="submit">
-                Submit
-              </button>
+              <button class="w-25 btn btn-danger" type="submit">Submit</button>
             </div>
           </form>
         </div>
       </div>
     </main>
+    <!-- cart -->
+
+    <div class="card col-md-2 cart shadow-lg rounded">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-primary">Your cart</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Transportation</h6>
+          </div>
+          <span class="text-muted" id="transportation">$0</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Additional Cost</h6>
+          </div>
+          <span class="text-muted" id="additional-cost">$0</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Security</h6>
+          </div>
+          <span class="text-muted" id="security">$0</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total (USD)</span>
+          <strong id="total">$0</strong>
+        </li>
+      </ul>
+    </div>
+
     <footer class="container">
       <p class="copyright">Copyright Tribal Gateway &COPY; 2023</p>
     </footer>
