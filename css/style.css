@@ -364,7 +364,7 @@ header {
 }
 
 .testimonial-container {
-  background-image: url("./images/Layer.jpg");
+  background-image: url("../images/Layer.jpg");
   background-size: cover;
   padding: 30px;
   margin-top: 50px;
@@ -483,6 +483,34 @@ footer {
   .smaller {
     width: 49%;
     height: 100px;
+  }
+
+  .prize-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .transport-header {
+    height: 300px;
+    width: 100%;
+    background-color: #000000;
+  }
+
+  .prize-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .prize-text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .prize-text {
+    font-size: 1.5rem;
   }
 }
 
