@@ -1,3 +1,8 @@
+let total = 0,
+  additionalCost = 0,
+  transportation = 0,
+  security = 0;
+
 // function to hide or show officers option in the transport service page
 const showOption = document.querySelector("#security-yes");
 const hideOption = document.querySelector("#security-no");
@@ -18,10 +23,6 @@ hideOption.addEventListener("change", () => {
 // Compute cart values
 
 const totalStrong = document.querySelector("#total");
-let total = 0,
-  additionalCost = 0,
-  transportation = 0,
-  security = 0;
 
 // to get value for additional cost
 const severalStops = document.querySelector("#several-stops");
@@ -71,6 +72,7 @@ privateRadio.addEventListener("change", () => {
     armedCheckbox.removeAttribute("disabled");
     private = parseInt(privateRadio.value);
     police = 0;
+    if (!armedCheckbox.checked) armed = 0;
     security = private + police + armed;
     securitySpan.textContent = `$${security}`;
     total = additionalCost + transportation + security;
@@ -83,6 +85,7 @@ policeRadio.addEventListener("change", () => {
     armedCheckbox.removeAttribute("disabled");
     police = parseInt(policeRadio.value);
     private = 0;
+    if (!armedCheckbox.checked) armed = 0;
     security = private + police + armed;
     securitySpan.textContent = `$${security}`;
     total = additionalCost + transportation + security;
