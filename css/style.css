@@ -19,17 +19,14 @@
   --text-color3: #4a1818;
 }
 
-
 /*Customizing the Bootstrap hamburger colo*/
 
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='yellow' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-.navbar-toggler{
-border: 2px solid coral;
-}
-.navbar-toggler:focus{
-box-shadow: none;
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 .navbar-dark .navbar-toggler {
@@ -41,6 +38,33 @@ box-shadow: none;
   background-color: black !important;
 }
 
+/*Adjusting the links to the center*/
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-item {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/*Adjusting the colours*/
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--main-color);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--text-color2);
+}
+
+.navbar-dark .navbar-brand {
+  color: var(--main-color);
+}
+
+/*Body Styles*/
+
 body {
   width: 100%;
   min-height: 100vh;
@@ -49,27 +73,14 @@ body {
 }
 
 .header-content {
-  height: 730px;
+  height: 750px;
   width: 100%;
   background-color: #000000;
 }
 
 /*Style rules for the navigation bar*/
 
-header {
-  text-decoration: none;
-  position: static;
-  width: 100%;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: transparent;
-  padding: 28px 12%;
-  transition: all 0.5s ease;
-}
+
 
 .logo {
   color: var(--main-color);
@@ -78,13 +89,10 @@ header {
   text-decoration: none;
 }
 
-
-
 /*Responsive Styles for smaller screens*/
 @media (max-width: 760px) {
-
   .text-center {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: auto;
     padding-bottom: 20px;
   }
@@ -99,7 +107,6 @@ header {
 }
 
 @media (max-width: 480px) {
-  
   .triangle-img {
     height: 20px;
   }
@@ -111,7 +118,7 @@ header {
 
 /*Style for the header image*/
 .tribal-image {
-  width: 35%;
+  width: 50%;
   margin: 0 auto 10px auto;
   padding-top: 8%;
   display: block;
@@ -386,7 +393,7 @@ footer {
 
 @media (max-width: 600px) {
   .prize-text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 

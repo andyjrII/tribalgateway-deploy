@@ -1,89 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iofrm</title>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/fontawesome-all.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/iofrm-style.css">
-    <link rel="stylesheet" type="text/css" href="../css/iofrm-theme3.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../css/fontawesome-all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/iofrm-style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/iofrm-theme3.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Fixed navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Tribal Gateway</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login3.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register3.html">Signup</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <div class="form-body">
-        <div class="website-logo">
-            <a href="index.html">
-                <div class="logo">
-                    <img class="logo-size" src="images/logo-light.svg" alt="">
-                </div>
-            </a>
+      <div class="website-logo">
+        <a href="index.html">
+          <div class="logo">
+            <img class="logo-size" src="images/logo-light.svg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="row">
+        <div class="img-holder">
+          <div class="bg"></div>
+          <div class="info-holder"></div>
         </div>
-        <div class="row">
-            <div class="img-holder">
-                <div class="bg"></div>
-                <div class="info-holder">
-
+        <div class="form-holder">
+          <div class="form-content">
+            <div class="form-items">
+              <h3>Welcome Back!</h3>
+              <p>
+                Fill in your correct account details to login.
+              </p>
+              <div class="page-links">
+                <a href="login3.html" class="active">Login</a
+                ><a href="register3.html">Register</a>
+              </div>
+              <div
+                class="alert alert-warning alert-dismissible fade show with-icon"
+                role="alert"
+              >
+                Please fill the following form with your information
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="alert"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="username"
+                  placeholder="E-mail Address"
+                  required
+                />
+                <input
+                  class="form-control"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                />
+                <div class="form-button">
+                  <button id="submit" type="submit" class="ibtn">Login</button>
+                  <a href="forget3.html">Forget password?</a>
                 </div>
+              </form>
             </div>
-            <div class="form-holder">
-                <div class="form-content">
-                    <div class="form-items">
-                        <h3>Get more things done with Loggin platform.</h3>
-                        <p>Access to the most powerfull tool in the entire design and web industry.</p>
-                        <div class="page-links">
-                            <a href="login3.html" class="active">Login</a><a href="register3.html">Register</a>
-                        </div>
-                        <div class="alert alert-warning alert-dismissible fade show with-icon" role="alert">
-                            Please fill the following form with your information
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <form>
-                            <input class="form-control" type="text" name="username" placeholder="E-mail Address" required>
-                            <input class="form-control" type="password" name="password" placeholder="Password" required>
-                            <div class="form-button">
-                                <button id="submit" type="submit" class="ibtn">Login</button> <a href="forget3.html">Forget password?</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-<script src="../js/jquery.min.js"></script>
-<script src="../js/popper.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/main.js"></script>
-</body>
-
+    <footer class="container">
+        <p class="copyright">Copyright Tribal Gateway &COPY; 2023</p>
+      </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
 </html>

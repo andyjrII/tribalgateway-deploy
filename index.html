@@ -17,21 +17,6 @@
     <!-- Linking local css style file -->
     <link rel="stylesheet" href="./css/style.css" />
 
-    <!-- Links for icons-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
-    <!-- or -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
-
     <!--favicon-->
     <link rel="shortcut icon" href="/images/tribal.png" type="image/x-icon" />
 
@@ -44,24 +29,44 @@
 
   <body>
     <div class="header-content container-fluid">
-      <!--Navigation bar-->
-
       <header>
-        <a href="#" class="logo"> <span>Tribal Gateway</span></a>
-
-        <ul class="navbar">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-
-        <div class="main">
-          <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
-      </header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Tribal Gateway</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/login3.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/register3.html">Signup</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
 
       <!--container for the top image, welcome text, and triangle image-->
 
