@@ -81,7 +81,6 @@ body {
 .header-content {
   height: 750px;
   width: 100%;
-  /*background-color: #000000;*/
 }
 
 /*Style rules for the navigation bar*/
@@ -260,6 +259,22 @@ main {
   position: relative;
 }
 
+.modal-content {
+  background-size: 100% 100%;
+}
+
+.ghana-modal {
+  background-image: url("../images/ghanaflag.jpg");
+}
+
+.rwanda-modal {
+  background-image: url("../images/rwandaflag.png");
+}
+
+.nigeria-modal {
+  background-image: url("../images/nigeriaflag.jpg");
+}
+
 .btn img {
   width: 100%;
   height: 250px;
@@ -435,6 +450,10 @@ footer {
   .title-text {
     font-size: 1.2rem;
   }
+
+  h3 .title-text {
+    font-size: 1rem;
+  }
 }
 
 .copyright {
@@ -523,24 +542,22 @@ hr {
   z-index: 9999;
 }
 
-
 /*styles for the concierge page*/
 .py-5 {
-  padding-top: 1rem!important;
+  padding-top: 1rem !important;
 }
 .pt-5 {
   background-image: url("../images/airport-bg.jpg");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-color: rgb(255, 255, 255);
-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  height: 500px;
 }
 
 .display-4 {
   text-shadow: 2px 2px 4px #000;
 }
-
 
 /*Video Controls*/
 #video {
@@ -560,4 +577,3 @@ height: 500px;
   top: 100px;
   right: 20px;
 }
-

@@ -30,7 +30,7 @@
   <body>
     <div class="header-content container-fluid">
       <video id="video" autoplay loop>
-        <source src="..\video\drum.mp4" type="video/mp4">
+        <source src="..\video\drum.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <header>
@@ -210,9 +210,15 @@
 
     <div class="container country-gallery">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <!-- Ghana -->
         <div class="col">
           <div class="card shadow-sm image-container">
-            <button type="button" class="btn">
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#GhanaModal"
+            >
               <img
                 class="bd-placeholder-img card-img-top"
                 width="100%"
@@ -223,6 +229,47 @@
             </button>
           </div>
         </div>
+        <!-- Ghana Modal -->
+        <div
+          class="modal fade"
+          id="GhanaModal"
+          tabindex="-1"
+          aria-labelledby="GhanaModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content ghana-modal">
+              <div class="modal-header">
+                <h1
+                  class="modal-title fs-4 text-center fw-bold"
+                  id="GhanaModalLabel"
+                >
+                  TRIBAL GATEWAY
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-center">
+                  <a class="btn btn-secondary"> Coming Soon </a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- Nigeria -->
         <div class="col">
@@ -231,7 +278,7 @@
               type="button"
               class="btn"
               data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              data-bs-target="#NigeriaModal"
             >
               <img
                 class="bd-placeholder-img card-img-top"
@@ -243,19 +290,22 @@
             </button>
           </div>
         </div>
-        <!-- Modal -->
+        <!-- Nigeria Modal -->
         <div
           class="modal fade"
-          id="exampleModal"
+          id="NigeriaModal"
           tabindex="-1"
-          aria-labelledby="exampleModalLabel"
+          aria-labelledby="NigeriaModalLabel"
           aria-hidden="true"
         >
           <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content nigeria-modal">
               <div class="modal-header">
-                <h1 class="modal-title fs-4 text-center" id="exampleModalLabel">
-                  TRIBAL GATEWAY AIRPORT CONCIERGE SERVICES
+                <h1
+                  class="modal-title fs-4 text-center fw-bold"
+                  id="NigeriaModalLabel"
+                >
+                  TRIBAL GATEWAY
                 </h1>
                 <button
                   type="button"
@@ -266,14 +316,12 @@
               </div>
               <div class="modal-body">
                 <p class="text-center">
-                  <a href="./pages/transport.html" class="btn btn-secondary">
-                    Airport Transportation Services
-                  </a>
-                </p>
-                <p class="text-center">
-                  <a href="./pages/escort.html" class="btn btn-secondary"
-                    >Airport Escort</a
+                  <a
+                    href="./pages/concierge.html"
+                    class="btn btn-primary shadow-lg"
                   >
+                    Concierge Services
+                  </a>
                 </p>
               </div>
               <div class="modal-footer">
@@ -292,7 +340,12 @@
         <!-- Rwanda -->
         <div class="col">
           <div class="card shadow-sm image-container">
-            <button type="button" class="btn">
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#RwandaModal"
+            >
               <img
                 class="bd-placeholder-img card-img-top"
                 width="100%"
@@ -301,6 +354,47 @@
                 alt="Rwanda"
               />
             </button>
+          </div>
+        </div>
+        <!-- Rwanda Modal -->
+        <div
+          class="modal fade"
+          id="RwandaModal"
+          tabindex="-1"
+          aria-labelledby="RwandaModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content rwanda-modal">
+              <div class="modal-header">
+                <h1
+                  class="modal-title fs-4 text-center fw-bold"
+                  id="RwandaModalLabel"
+                >
+                  TRIBAL GATEWAY
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-center">
+                  <a class="btn btn-secondary"> Coming Soon </a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
