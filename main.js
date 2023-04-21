@@ -19,3 +19,18 @@ sr.reveal('.sr', { // target elements with class "sr"
   cleanup: true // remove styles and animation data after animation completes
 });
 
+
+/*Fuction to mute the video*/
+const video = document.getElementById("video");
+const muteBtn = document.getElementById("mute-btn");
+
+function toggleMute() {
+  if (video.muted) {
+    video.muted = false;
+    muteBtn.textContent = "Mute";
+  } else {
+    video.muted = true;
+    muteBtn.textContent = "Unmute";
+  }
+}
+

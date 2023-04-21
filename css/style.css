@@ -81,7 +81,7 @@ body {
 .header-content {
   height: 750px;
   width: 100%;
-  background-color: #000000;
+  /*background-color: #000000;*/
 }
 
 /*Style rules for the navigation bar*/
@@ -543,7 +543,8 @@ height: 500px;
 
 
 /*Video Controls*/
-.drum-vid {
+#video {
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -551,4 +552,12 @@ height: 500px;
   width: auto;
   height: auto;
   z-index: -1;
+  object-fit: cover;
 }
+
+#mute-btn {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+}
+
