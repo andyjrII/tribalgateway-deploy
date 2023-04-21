@@ -457,3 +457,17 @@ hr {
 .dropdown-menu {
   z-index: 9999;
 }
+
+
+/*styles for the concierge page*/
+.pt-5 {
+  background-image: url("../images/airport-bg.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+color: rgb(255, 255, 255);
+}
+
+.display-4 {
+  text-shadow: 2px 2px 4px #000;
+}

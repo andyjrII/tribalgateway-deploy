@@ -279,7 +279,7 @@ form {
 form label {
   display: block;
   font-weight: normal;
-  margin-bottom: 5px;
+  margin: 5px;
 }
 
 form input[type="text"],
