@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+ 
+  <!-- HTML -->
+ 
+
+  <!-- Custom Styles -->
+</head>
+
+<body>
+  <header>
+  <video id="video" autoplay muted loop>
+    <source src="drum.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="header-text">
+    <h1>Welcome</h1>
+  </div>
+  <button id="mute-btn" onclick="toggleMute()">Mute</button>
+</header>
+  <!-- Project -->
+  <script>
+    const video = document.getElementById("video");
+const muteBtn = document.getElementById("mute-btn");
+
+function toggleMute() {
+  if (video.muted) {
+    video.muted = false;
+    muteBtn.textContent = "Mute";
+  } else {
+    video.muted = true;
+    muteBtn.textContent = "Unmute";
+  }
+}
+  </script>
+</body>
+</html>

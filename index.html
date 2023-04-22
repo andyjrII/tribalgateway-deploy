@@ -29,8 +29,8 @@
 
   <body>
     <div class="header-content container-fluid">
-      <video id="video" autoplay loop>
-        <source src="..\video\drum.mp4" type="video/mp4" />
+      <video id="video" autoplay muted loop>
+        <source src="../video/drum.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <header>
@@ -78,13 +78,13 @@
           </div>
         </nav>
       </header>
-      <button id="mute-btn" onclick="toggleMute()">Mute</button>
+      <button id="mute-btn">Mute</button>
       <!--container for the top image, welcome text, and triangle image-->
 
-      <div class="container text-center">
+      <div class="container-fluid text-center">
         <img class="tribal-image" src="./images/tribal.png" alt="logo" />
         <hr class="top-hr" />
-        <img src="./images/Welcome Tgw.gif" alt="" class="welcome-video" />
+        <h1 class="head-text" data-text="Welcome">Welcome</h1>
         <img src="./images/triangle.png" alt="triangles" class="triangle-img" />
       </div>
     </div>

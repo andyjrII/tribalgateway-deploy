@@ -20,17 +20,20 @@ sr.reveal('.sr', { // target elements with class "sr"
 });
 
 
-/*Fuction to mute the video*/
-const video = document.getElementById("video");
-const muteBtn = document.getElementById("mute-btn");
+window.addEventListener('load', function() {
+  // code to be executed when the window has finished loading
+  const video = document.getElementById("video");
+  const muteBtn = document.getElementById("mute-btn");
 
-function toggleMute() {
-  if (video.muted) {
-    video.muted = false;
-    muteBtn.textContent = "Mute";
-  } else {
-    video.muted = true;
-    muteBtn.textContent = "Unmute";
+  function toggleMute() {
+    if (video.muted) {
+      video.muted = false;
+      muteBtn.textContent = "Mute";
+    } else {
+      video.muted = true;
+      muteBtn.textContent = "Unmute";
+    }
   }
-}
 
+  muteBtn.addEventListener('click', toggleMute);
+});
