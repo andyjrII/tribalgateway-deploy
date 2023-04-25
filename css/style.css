@@ -1,3 +1,6 @@
+/*Import Other Pages' Style Files*/
+@import url("concierge.css");
+
 /*Import Poppins Font*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
@@ -10,9 +13,41 @@
   list-style: none;
 }
 
+.content {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  display: inline-block;
+}
+
+#vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#first_container {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.585);
+  padding: 0px;
+  min-width: 100%;
+}
+
 /*Setting colours to variables in the root element*/
 :root {
-  --bg-color: #fff;
+  --bg-color: #000000;
   --main-color: #daa520;
   --text-color1: #000000;
   --text-color2: #fff;
@@ -59,6 +94,7 @@
 /*Adjusting the colours*/
 .navbar-dark .navbar-nav .nav-link {
   color: var(--text-color1);
+  font-weight: bold;
 }
 
 .navbar-nav .nav-link:hover {
@@ -93,11 +129,19 @@ body {
 }
 /*End of style rules for the navigation bar*/
 
+#first-container h2 {
+  padding-top: 100px;
+  padding-bottom: 0px;
+  color: white;
+  font-size: 100px;
+  font-family: "Gill Sans";
+}
+
 /*Style for the header image*/
 .tribal-image {
-  width: 50%;
-  margin: 0 auto 10px auto;
-  padding-top: 8%;
+  width: 45%;
+  margin: 0px auto 10px auto;
+  padding-top: 0%;
   display: block;
 }
 
@@ -127,6 +171,223 @@ body {
   height: 80px;
   bottom: 20px;
 }
+
+#testimonial-text {
+  color: aliceblue;
+  font-size: 80px;
+  font-family: Impact;
+  text-align: center;
+  margin-top: 200px;
+}
+
+#content-inner {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.72);
+}
+
+main {
+  margin-bottom: 30px;
+}
+
+.middle-container {
+  position: relative;
+  width: 100%;
+  padding: 0px;
+  margin: 30px auto;
+}
+
+.middle-container img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  padding-top: 0px;
+}
+
+.middle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--text-color1);
+  padding: 20px;
+}
+
+.definition-heading {
+  color: var(--text-color3);
+  font-weight: bold;
+}
+
+.mission-img {
+  display: block;
+  margin: 5% auto 0 auto;
+  width: 90%;
+}
+
+.prize-div,
+.visiting-div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 76%;
+}
+
+.prize-text,
+.visiting-text,
+.visiting-text2 {
+  font-weight: bolder;
+}
+
+.divider {
+  border-bottom: var(--main-color) 10px solid;
+  width: 100%;
+}
+
+#prizeCarousel {
+  margin-bottom: 20px;
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.bigger {
+  width: 100%;
+  height: 400px;
+}
+
+.smaller {
+  width: 49%;
+  height: 200px;
+}
+
+.country-gallery {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 90%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.modal-content {
+  background-size: 100% 100%;
+}
+
+#NigeriaModal a {
+  background-color: #430303;
+  border-color: #4a1818;
+}
+
+#RwandaModal a {
+  background-color: #430303;
+  border-color: #4a1818;
+}
+
+#GhanaModal a {
+  background-color: #430303;
+  border-color: #4a1818;
+}
+
+.ghana-modal {
+  background-image: url("../images/ghanaflag.jpg");
+}
+
+.rwanda-modal {
+  background-image: url("../images/rwandaflag.png");
+}
+
+.nigeria-modal {
+  background-image: url("../images/nigeriaflag.jpg");
+}
+
+.btn img {
+  width: 100%;
+  height: 250px;
+  transition: transform 0.2s;
+}
+
+.btn:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  margin-left: 100px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.fa-star {
+  color: var(--main-color);
+}
+
+.d-flex {
+  display: flex;
+  align-items: center; /* This centers the items vertically */
+}
+
+.d-flex h5 {
+  color: white;
+}
+
+.card-body p {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.681);
+  color: white;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+.card-border {
+  border: none;
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*Responsive rules for the smaller screens*/
 
 /*Responsive Styles for smaller screens*/
 @media (max-width: 760px) {
@@ -173,155 +434,6 @@ body {
     height: 180px;
   }
 }
-/*End of style rules for header contents*/
-
-main {
-  margin-bottom: 30px;
-}
-
-.middle-container {
-  position: relative;
-  width: 100%;
-  margin: auto;
-}
-
-.middle-container img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.middle-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: var(--text-color1);
-  padding: 20px;
-}
-
-.definition-heading {
-  color: var(--text-color3);
-  font-weight: bold;
-}
-
-.mission-img {
-  display: block;
-  margin: 5% auto 0 auto;
-  width: 90%;
-}
-
-.prize-div,
-.visiting-div {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 76%;
-}
-
-.prize-text,
-.visiting-text,
-.visiting-text2 {
-  font-weight: bolder;
-}
-
-.divider {
-  border-bottom: var(--main-color) 10px solid;
-  width: 100%;
-}
-
-#prizeCarousel,
-#prizeSmaller {
-  width: 76%;
-}
-
-#prizeCarousel {
-  margin-bottom: 20px;
-}
-
-.bigger {
-  width: 100%;
-  height: 400px;
-}
-
-.smaller {
-  width: 49%;
-  height: 200px;
-}
-
-.country-gallery {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 90%;
-}
-
-.image-container {
-  position: relative;
-}
-
-.modal-content {
-  background-size: 100% 100%;
-}
-
-.ghana-modal {
-  background-image: url("../images/ghanaflag.jpg");
-}
-
-.rwanda-modal {
-  background-image: url("../images/rwandaflag.png");
-}
-
-.nigeria-modal {
-  background-image: url("../images/nigeriaflag.jpg");
-}
-
-.btn img {
-  width: 100%;
-  height: 250px;
-  transition: transform 0.2s;
-}
-
-.btn:hover img {
-  transform: scale(1.1);
-  filter: brightness(0.5);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.testimonial-container {
-  background-image: url("../images/Layer.jpg");
-  background-size: cover;
-  padding: 30px;
-  margin-top: 50px;
-}
-
-.fa-star {
-  color: var(--main-color);
-}
-
-.d-flex {
-  display: flex;
-  align-items: center; /* This centers the items vertically */
-}
-
-.d-flex h5 {
-  color: white;
-}
-
-.card-body p {
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: white;
-  font-weight: bolder;
-  border-radius: 10px;
-}
-
-.card-border {
-  border: none;
-}
-
-footer {
-  margin-top: 30px;
-}
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
@@ -329,45 +441,6 @@ footer {
   }
 }
 
-.b-example-divider {
-  height: 3rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: solid rgba(0, 0, 0, 0.15);
-  border-width: 1px 0;
-  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-}
-
-.b-example-vr {
-  flex-shrink: 0;
-  width: 1.5rem;
-  height: 100vh;
-}
-
-.bi {
-  vertical-align: -0.125em;
-  fill: currentColor;
-}
-
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
-}
-
-.nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-/*Responsive rules for the smaller screens*/
 @media (max-width: 1090px) {
   .header-content {
     height: 650px;
@@ -430,12 +503,6 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .concierge-header {
-    height: 300px;
-    width: 100%;
-    background-color: #000000;
-  }
-
   .prize-text {
     font-size: 1.2rem;
   }
@@ -456,107 +523,8 @@ footer {
   }
 }
 
-.copyright {
-  text-align: center;
-  font-size: 1rem;
-  margin: auto;
-  padding-bottom: 2%;
-}
-
-/* concierge service */
-
-.concierge-header {
-  height: 700px;
-  width: 100%;
-  background-color: #000000;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.top-container {
-  width: 100%;
-}
-
-.concierge-triangle {
-  margin-top: 40px;
-  width: 100%;
-}
-
-.title-text {
-  color: var(--main-color);
-  padding: 10px;
-}
-
-.text-center p {
-  margin-top: 20px;
-}
-
-input[type="number"] {
-  width: 80px;
-}
-
-.concierge-form {
-  padding: 30px;
-  background-color: rgba(218, 165, 32, 0.2);
-}
-
-hr {
-  height: 5px;
-  background-color: var(--main-color);
-}
-
-.input-group-text {
-  color: var(--main-color);
-}
-
-.radio-btn {
-  margin: 10px;
-}
-
-.cart {
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 5px;
-}
-
-.payment-info {
-  margin-top: 20px;
-}
-
-@media (max-width: 900px) {
-  .concierge-header {
-    height: 450px;
-    width: 100%;
-    background-color: #000000;
-  }
-}
-
-@media (max-width: 600px) {
-  .concierge-header {
-    height: 300px;
-    width: 100%;
-    background-color: #000000;
-  }
-}
-
-.dropdown-menu {
-  z-index: 9999;
-}
-
-/*styles for the concierge page*/
-.py-5 {
-  padding-top: 1rem !important;
-}
-.pt-5 {
-  background-image: url("../images/airport-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: rgb(255, 255, 255);
-  height: 500px;
-}
-
-.display-4 {
-  text-shadow: 2px 2px 4px #000;
+#copyright {
+  color: rgb(232, 177, 13);
 }
 
 /*Video Controls*/
@@ -570,10 +538,4 @@ hr {
   height: auto;
   z-index: -1;
   object-fit: cover;
-}
-
-#mute-btn {
-  position: absolute;
-  top: 100px;
-  right: 20px;
 }
