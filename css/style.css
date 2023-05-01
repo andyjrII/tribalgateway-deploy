@@ -30,7 +30,7 @@
 
 #video {
   object-fit: cover;
-  width: 100vw;
+  width: 99%;
   height: 700px;
   position: absolute;
   z-index: -1;
@@ -63,7 +63,7 @@
 }
 
 /*Customizing the Bootstrap hamburger color*/
-.navbar-dark .navbar-toggler-icon {
+.navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='goldenrod' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
@@ -71,7 +71,7 @@
   box-shadow: none;
 }
 
-.navbar-dark .navbar-toggler {
+.navbar-toggler {
   color: var(--main-color);
   border-color: var(--main-color);
   background-color: var(--text-color1);
@@ -95,7 +95,7 @@
 }
 
 /*Adjusting the colours*/
-.navbar-dark .navbar-nav .nav-link {
+.navbar-nav .nav-link {
   color: var(--text-color1);
   font-weight: bold;
 }
@@ -104,7 +104,7 @@
   color: var(--text-color2);
 }
 
-.navbar-dark .navbar-brand {
+.navbar-brand {
   color: var(--text-color1);
 }
 
@@ -143,9 +143,7 @@ body {
 /*Style for the header image*/
 .tribal-image {
   width: 45%;
-  margin: 0px auto 10px auto;
-  padding-top: 0%;
-  display: block;
+  margin: auto;
 }
 
 .top-hr {
@@ -175,18 +173,12 @@ body {
   margin-top: 200px;
 }
 
-#content-inner {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.72);
-}
-
 main {
   margin-bottom: 30px;
 }
 
-.first-container {
-  padding: 10px;
+.middle-container {
+  background-image: url("../images/background.png");
 }
 
 .tribal-box {
@@ -212,9 +204,6 @@ main {
 .gateway-box {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-image: url("../images/background.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 .gateway-box h1,
@@ -227,33 +216,85 @@ p {
   font-weight: bold;
 }
 
-.middle-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.mission-box {
+  background-color: var(--bg-color);
+}
+
+.mission-box .col-md-12 {
   text-align: center;
-  color: var(--text-color1);
+  padding-top: 100px;
+}
+
+.mission-text {
+  color: aliceblue;
+  font-size: 80px;
+  font-family: Impact;
+}
+
+.mission-img-box {
+  background-color: var(--bg-color);
+}
+
+.mission-img-box .col-md-12 {
   padding: 20px;
+  border-radius: 40px;
+  text-align: center;
 }
 
-.mission-img {
-  display: block;
-  margin: 5% auto 0 auto;
-  width: 90%;
+.mission-img-top,
+.mission-img-bottom {
+  max-width: 100%;
+  height: auto;
 }
 
-.prize-div,
+.mission-img-bottom {
+  margin-bottom: 50px;
+}
+
+.mission-statement {
+  margin-bottom: 50px;
+  color: bisque;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.prize-container {
+  background-image: url("../images/gold-black.jpg");
+}
+
+.prize-box {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prize-box h1 {
+  color: aliceblue;
+  font-size: 40px;
+  font-family: Impact;
+  text-align: left;
+  padding-top: 0;
+}
+
+.prize-box p {
+  text-align: left;
+  color: whitesmoke;
+}
+
 .visiting-div {
   margin-top: 50px;
   margin-bottom: 50px;
   width: 76%;
 }
 
-.prize-text,
 .visiting-text,
 .visiting-text2 {
   font-weight: bolder;
+}
+
+.visiting-text2 {
+  color: aliceblue;
 }
 
 .divider {
@@ -262,20 +303,12 @@ p {
 }
 
 #prizeCarousel {
-  margin-bottom: 20px;
-  margin-top: 100px;
-  width: 100%;
-  height: 100%;
+  margin-top: 25px;
 }
 
-.bigger {
+.picture-slide {
   width: 100%;
-  height: 400px;
-}
-
-.smaller {
-  width: 49%;
-  height: 200px;
+  height: 350px;
 }
 
 .country-gallery {
@@ -336,9 +369,7 @@ p {
   top: 0;
   left: 0;
   color: white;
-  margin-left: 100px;
   margin-right: auto;
-  margin-bottom: 30px;
   margin-top: 40px;
 }
 
@@ -387,132 +418,201 @@ footer {
   text-shadow: 2px 2px 4px #000;
 }
 
-.text-center p {
-  margin-top: 20px;
-}
-
 /*Responsive Styles for smaller screens*/
-@media (max-width: 760px) {
-  .navbar-dark .navbar-nav .nav-link {
-    color: var(--main-color);
-  }
-
-  .navbar {
-    background: #000;
-  }
-
-  .header-content {
-    background-color: #000;
-  }
-
-  header {
-    padding: 30px 0 30px 0;
-  }
-
-  .text-center {
-    font-size: 1.2rem;
-    margin: auto;
-    padding-bottom: 20px;
-  }
-
-  .triangle-img {
-    height: 20px;
-  }
-
-  .tribal-image {
-    margin: 10% auto 2% auto;
-  }
-
-  .top-hr {
-    z-index: 800;
-    height: 1px;
-  }
-}
-
 @media (max-width: 480px) {
   header {
     margin-bottom: 30px;
   }
 
-  .triangle-img {
-    height: 25px;
-    bottom: 30px;
+  .header-content {
+    height: 700px;
+  }
+
+  #video {
+    width: 97%;
+    height: 380px;
+  }
+
+  #welcome-text {
+    padding-top: 20px;
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .tribal-image {
+    width: 100%;
+    height: 250px;
   }
 
   .top-hr {
-    z-index: 499;
+    height: 10px;
+    width: 35%;
   }
 
-  .header-content {
-    height: 400px;
-    width: 100%;
+  .triangle-img {
+    bottom: 5px;
+  }
+
+  .gateway-box {
+    background-image: url("../images/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .mission-box .col-md-12 {
+    padding-top: 50px;
+  }
+
+  .mission-text {
+    font-size: 2rem;
+  }
+
+  .mission-statement {
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .prize-box {
+    padding: 15px;
+  }
+
+  .prize-box h1 {
+    font-size: 1.8rem;
+  }
+
+  .visiting-text {
+    font-size: 1.8rem;
+  }
+
+  .visiting-text2 {
+    font-size: 1.5rem;
+  }
+
+  #testimonial-text {
+    font-size: 2rem;
+    margin-top: 80px;
+  }
+
+  #vid {
+    display: none;
+  }
+
+  .testimonial-container {
+    background-image: url("../images/gold-black.jpg");
   }
 }
 
-@media (max-width: 1090px) {
-  .header-content {
-    height: 650px;
-    width: 100%;
+@media (max-width: 760px) {
+  header {
+    margin-bottom: 30px;
   }
 
-  header {
-    padding: 30px 0 30px 0;
+  .header-content {
+    height: 580px;
+  }
+
+  #video {
+    width: 98%;
+    height: 550px;
+  }
+
+  #welcome-text {
+    padding-top: 40px;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .tribal-image {
+    width: 75%;
+    height: 300px;
   }
 
   .top-hr {
-    background-color: var(--bg-color);
-    height: 3px;
-    width: 35%;
-    margin: auto;
-    border: none;
-    opacity: 100%;
+    height: 10px;
+    width: 50%;
   }
 
-  .mission-img {
-    width: 100%;
+  .triangle-img {
+    bottom: 5px;
+    height: 50px;
   }
 
-  .bigger {
-    width: 100%;
-    height: 200px;
+  .gateway-box {
+    background-image: url("../images/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
   }
 
-  .smaller {
-    width: 49%;
-    height: 100px;
+  .mission-box .col-md-12 {
+    padding-top: 50px;
   }
 
-  .prize-text {
-    font-size: 2.5rem;
+  .mission-text {
+    font-size: 2rem;
+  }
+
+  .mission-statement {
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .prize-container {
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .prize-box {
+    padding: 15px;
+  }
+
+  .prize-box h1 {
+    font-size: 1.8rem;
+  }
+
+  .picture-slide {
+    width: 75%;
+    height: 350px;
+  }
+
+  .visiting-text {
+    font-size: 1.8rem;
+  }
+
+  .visiting-text2 {
+    font-size: 1.5rem;
+  }
+
+  #testimonial-text {
+    font-size: 2rem;
+    margin-top: 80px;
+  }
+
+  #vid {
+    display: none;
+  }
+
+  .testimonial-container {
+    background-image: url("../images/gold-black.jpg");
   }
 }
 
 @media (max-width: 1024px) {
   header {
-    padding: 10px 0 10px 0;
+    padding: 10px;
   }
 
   .header-content {
     height: 700px;
     width: 100%;
   }
-}
 
-@media (max-width: 900px) {
-  .prize-text {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .prize-text {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 540px) {
-  .header-content {
-    height: 400px;
-    width: 100%;
+  footer {
+    margin: 0px;
   }
 }
