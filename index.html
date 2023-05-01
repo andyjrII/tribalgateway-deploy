@@ -82,8 +82,8 @@
 
       <!--container for the top image, welcome text, and triangle image-->
 
-      <div class="container text-center" id="first_container">
-        <h2>WELCOME</h2>
+      <div class="container-fluid text-center" id="first_container">
+        <h2 id="welcome-text">WELCOME</h2>
         <img class="tribal-image" src="./images/tribal.png" alt="logo" />
         <hr class="top-hr" />
         <img src="./images/triangle.png" alt="triangles" class="triangle-img" />
@@ -92,40 +92,18 @@
 
     <!--Middle container for text-->
 
-    <div
-      class="container-fluid"
-      style="background-image: url('images/background.png')"
-    >
-      <div class="row" style="margin-top: 30px; margin-bottom: 30px">
-        <div
-          class="col-md-6"
-          style="
-            background-color: rgb(122, 108, 2);
-            padding-top: 30px;
-            padding-bottom: 30px;
-          "
-        >
-          <h1 style="color: antiquewhite" class="courses_header">TRIBAL:</h1>
-          <p style="color: rgb(255, 251, 249); font-style: oblique; font: bold">
-            /'^lbl/ noun
-          </p>
-          <p style="color: rgb(209, 207, 204)">- Member of a Community</p>
-          <p style="color: rgb(209, 207, 204)">
-            - a means of achieving a state or condition.
-          </p>
+    <div class="container-fluid">
+      <div class="row first-container">
+        <div class="col-md-5 tribal-box text-center">
+          <h1>TRIBAL:</h1>
+          <p id="tribal-pronounciation">/'^lbl/ noun</p>
+          <p class="meaning">- Member of a Community</p>
+          <p class="meaning">- a means of achieving a state or condition.</p>
         </div>
 
-        <div
-          class="col-md-6"
-          style="
-            padding-top: 30px;
-            padding-bottom: 30px;
-            background-image: url('images/background.png');
-            background-size: contain;
-          "
-        >
-          <h1 class="courses_header">GATEWAY:</h1>
-          <p style="font-style: oblique; font-weight: bold">/'geltwel/ noun</p>
+        <div class="col-md-7 gateway-box text-center">
+          <h1>GATEWAY:</h1>
+          <p id="gateway-pronounciation">/'geltwel/ noun</p>
           <p>
             - a place regarded as giving access or entrance to another place.
           </p>
@@ -172,8 +150,6 @@
         </div>
       </div>
     </div>
-
-    <div class="mission container"></div>
 
     <!-- page divider -->
     <div class="divider"></div>
@@ -657,7 +633,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="container">
+    <footer class="container text-center">
       <p id="copyright">Copyright Tribal Gateway &COPY; 2023</p>
     </footer>
 

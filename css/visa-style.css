@@ -1,0 +1,41 @@
+/*Import Poppins Font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+#visa-video {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute;
+  right: 0;
+}
+
+#visa-text {
+  margin-top: 30px;
+}
+
+.visa-form {
+  padding: 20px;
+  background-image: url("../images/Layer.jpg");
+  background-size: contain;
+}
+
+.input-group-text {
+  color: var(--main-color);
+}
+
+#text-box {
+  padding: 30px;
+}
+
+#important-box {
+  background-image: url("../images/native-pattern.jpg");
+  background-size: contain;
+  margin-left: 1px;
+}
+
+#important-inner-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  margin: 10px;
+}

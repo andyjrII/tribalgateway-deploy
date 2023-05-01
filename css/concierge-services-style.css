@@ -8,10 +8,6 @@
   margin-right: 0;
 }
 
-.top-container {
-  width: 100%;
-}
-
 .concierge-triangle {
   margin-top: 40px;
   width: 100%;
@@ -22,33 +18,10 @@
   padding: 10px;
 }
 
-.py-5 {
-  padding-top: 1rem !important;
-}
-.pt-5 {
-  background-image: url("../images/airport-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: rgb(255, 255, 255);
-  height: 500px;
-}
-
-.display-4 {
-  text-shadow: 2px 2px 4px #000;
-}
-
-.text-center p {
-  margin-top: 20px;
-}
-
-input[type="number"] {
-  width: 80px;
-}
-
 .concierge-form {
   padding: 30px;
-  background-color: rgba(218, 165, 32, 0.2);
+  background-image: url(../images/Layer.jpg);
+  background-size: contain;
 }
 
 hr {
@@ -58,6 +31,10 @@ hr {
 
 .input-group-text {
   color: var(--main-color);
+}
+
+input[type="number"] {
+  width: 80px;
 }
 
 .radio-btn {
@@ -82,5 +59,15 @@ hr {
   .concierge-header {
     height: 300px;
     width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .title-text {
+    font-size: 1.2rem;
+  }
+
+  h3 .title-text {
+    font-size: 1rem;
   }
 }

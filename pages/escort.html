@@ -16,6 +16,7 @@
 
     <!-- Linking local css style file -->
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/concierge-services-style.css" />
 
     <!-- Links for icons-->
     <link
@@ -130,13 +131,15 @@
 
       <div class="row">
         <div class="col-lg-12 concierge-form shadow-lg rounded">
-          <form class="needs-validation">
+          <form>
             <div class="row g-3">
               <h4 class="mb-3">Personal Information</h4>
 
               <div class="col-sm-4">
                 <div class="input-group mb-3">
-                  <span class="input-group-text bg-dark text-wrap"> Name </span>
+                  <span class="input-group-text bg-dark text-wrap" for="name">
+                    Name
+                  </span>
                   <input
                     type="text"
                     class="form-control"
@@ -144,7 +147,6 @@
                     name="name"
                     required
                   />
-                  <div class="invalid-feedback">Valid Name is required.</div>
                 </div>
               </div>
 
@@ -160,7 +162,6 @@
                     name="phone"
                     required
                   />
-                  <div class="invalid-feedback">Phone Number is required.</div>
                 </div>
               </div>
 
@@ -176,7 +177,6 @@
                     name="email"
                     required
                   />
-                  <div class="invalid-feedback">Email Address is required.</div>
                 </div>
               </div>
 
@@ -194,9 +194,6 @@
                     name="arrival-date"
                     required
                   />
-                  <div class="invalid-feedback">
-                    Date of Arrival is required.
-                  </div>
                 </div>
               </div>
 
@@ -212,9 +209,6 @@
                     name="arrival-time"
                     required
                   />
-                  <div class="invalid-feedback">
-                    Time of Arrival is required.
-                  </div>
                 </div>
               </div>
 
@@ -230,9 +224,6 @@
                     name="departure-date"
                     required
                   />
-                  <div class="invalid-feedback">
-                    Date of Departure is required.
-                  </div>
                 </div>
               </div>
 
@@ -248,7 +239,6 @@
                     name="airline"
                     required
                   />
-                  <div class="invalid-feedback">Airline name is required.</div>
                 </div>
               </div>
 
@@ -267,7 +257,6 @@
                     max="99"
                     required
                   />
-                  <div class="invalid-feedback">Please a valid number.</div>
                 </div>
               </div>
 
@@ -457,9 +446,7 @@
                   id="security-1"
                   checked
                 />
-                <label
-                  class="btn btn-primary radio-btn rounded"
-                  for="security-1"
+                <label class="btn btn-dark radio-btn rounded" for="security-1"
                   >No</label
                 >
 
@@ -471,9 +458,7 @@
                   data-price="50"
                   id="security-2"
                 />
-                <label
-                  class="btn btn-primary radio-btn rounded"
-                  for="security-2"
+                <label class="btn btn-dark radio-btn rounded" for="security-2"
                   >Private Officer - $50 daily</label
                 >
 
@@ -485,9 +470,7 @@
                   data-price="50"
                   id="security-3"
                 />
-                <label
-                  class="btn btn-primary radio-btn rounded"
-                  for="security-3"
+                <label class="btn btn-dark radio-btn rounded" for="security-3"
                   >Police Officer - $70 daily</label
                 >
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Concierge Page</title>
+    <title>Visa Services</title>
 
     <!--favicon-->
     <link rel="shortcut icon" href="/images/tribal.png" type="image/x-icon" />
@@ -15,12 +15,17 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="../css/airport_style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/visa-style.css" />
 
     <!--Scroll Reveal JS library-->
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
+    <video id="visa-video" autoplay muted loop poster="../images/tribal.png">
+      <source src="../video/background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
     <header>
       <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
         <div class="container-fluid">
@@ -66,36 +71,30 @@
         </div>
       </nav>
     </header>
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
-      <h1 class="display-4 fw-bold">Airport Concierge Service</h1>
+    <div class="pt-5 text-center border-bottom video-overlay">
+      <h1 class="display-4 fw-bold text-white" id="visa-text">Visa Service</h1>
       <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4 text-dark">
-          We offer both Airport Escort as well as Airport Transport Services.
+        <p class="lead mb-4 text-white">
+          We offer both Visa on Arrival (VOA) as well as Visa Stamp Extension.
         </p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
           <a
             class="btn btn-danger btn-lg px-4 me-sm-3"
-            href="escort.html"
+            href="voa.html"
             target="_self"
-            >Airport Escort
+            >Visa on Arrival (VOA)
           </a>
           <a
             style="color: aliceblue"
             class="btn btn-danger btn-lg px-4 me-sm-3"
             href="transport.html"
             target="_self"
-            >Airport Transport</a
+            >Visa Stamp Extension</a
           >
         </div>
       </div>
     </div>
-    <div class="container">
-      <h3 class="display-7 fw-bold lh-1 mb-1 text-center">
-        <span class="title-text rounded bg-dark">
-          Airport Concierge: Transportation and Escort Services
-        </span>
-      </h3>
-    </div>
+
     <div class="container col-xxl-8 px-4 py-5 sr">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
@@ -110,26 +109,23 @@
         </div>
         <div class="col-lg-6">
           <h1 style="color: aliceblue" class="display-5 fw-bold lh-1 mb-3">
-            Airport Escort
+            Visa on Arrival (VOA)
           </h1>
           <p style="color: rgb(225, 230, 234)" class="lead">
-            Our airport escort service provides you with a hassle-free and
-            stress-free airport experience. Our friendly and professional
-            escorts will meet you at your arrival gate, assist you with your
-            luggage, and escort you through the airport to your next
-            destination. Whether you're a first-time traveler or a frequent
-            flyer, our airport escorts will ensure that you have a smooth and
-            enjoyable travel experience. Book our airport escort service today
-            and let us take care of all your airport needs. Click the button
-            below to experience our premium service.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab porro
+            necessitatibus pariatur! Incidunt dolorem qui tenetur asperiores
+            omnis excepturi nam ad officiis? Ab ad repellat possimus eaque
+            accusantium, earum sit ipsum iste corrupti officiis soluta quasi,
+            quo nam quaerat aliquam sequi, quisquam autem quae hic doloribus
+            illum blanditiis temporibus eum.
           </p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <a
               style="color: aliceblue"
-              href="escort.html"
+              href="voa.html"
               class="btn btn-danger btn-lg px-4 me-md-2"
               target="_self"
-              >Airport Escort</a
+              >Visa on Arrival (VOA)</a
             >
           </div>
         </div>
@@ -149,32 +145,29 @@
         </div>
         <div class="col-lg-6">
           <h1 style="color: aliceblue" class="display-5 fw-bold lh-1 mb-3">
-            Airport Transport
+            Visa Stamp Extension
           </h1>
           <p style="color: rgb(220, 224, 227)" class="lead">
-            Looking for a reliable and comfortable airport transport service?
-            Look no further than our professional and affordable airport shuttle
-            service. We offer prompt and efficient transportation to and from
-            the airport, ensuring that you arrive at your destination on time
-            and in style. With our modern fleet of vehicles and experienced
-            drivers, you can trust us to provide you with a safe and comfortable
-            ride. Book your airport transport service today and experience the
-            convenience and luxury of traveling with us. Click the button below
-            to experience our premium service..
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nulla
+            libero asperiores dolorem veniam eius doloremque doloribus in beatae
+            enim? Ipsum officiis dolores consectetur explicabo harum. Dolorem
+            vel nostrum aut ipsam similique ullam dolorum explicabo laboriosam
+            sed nulla est, iste rem officiis nisi quos a cupiditate eum quo
+            voluptas in!
           </p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <a
               style="color: aliceblue"
-              href="transport.html"
+              href="stamp-extension.html"
               class="btn btn-danger btn-lg px-4 me-md-2"
               target="_self"
-              >Airport Transport</a
+              >Visa Stamp Extensions</a
             >
           </div>
         </div>
       </div>
     </div>
-    <footer class="container">
+    <footer class="container text-center">
       <p id="copyright">Copyright Tribal Gateway &COPY; 2023</p>
     </footer>
 

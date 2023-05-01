@@ -1,0 +1,7 @@
+#image-header {
+  background-image: url("../images/airport-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
