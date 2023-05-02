@@ -12,20 +12,19 @@
   text-decoration: none;
 }
 
-.content {
+.testimonial-content {
   width: 100%;
-  height: 800px;
-  position: relative;
-  display: inline-block;
+  background-image: url("../images/gold-black.jpg");
+  background-size: 100%;
 }
 
-#vid {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.testifier {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
 }
 
 #video {
@@ -118,7 +117,7 @@ body {
 }
 
 .header-content {
-  height: 750px;
+  height: 720px;
   width: 100%;
 }
 
@@ -364,13 +363,11 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.testimonial-container {
-  position: absolute;
-  top: 0;
-  left: 0;
+.testimonial-carousel {
   color: white;
   margin-right: auto;
   margin-top: 40px;
+  width: 75%;
 }
 
 .fa-star {
@@ -386,6 +383,12 @@ p {
   color: white;
 }
 
+.d-flex img {
+  margin-right: 40px;
+  width: 100px;
+  height: 100px;
+}
+
 .card-body p {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.681);
@@ -399,7 +402,7 @@ p {
 }
 
 footer {
-  margin: 30px;
+  padding: 30px;
 }
 
 #copyright {
@@ -419,29 +422,35 @@ footer {
 }
 
 /*Responsive Styles for smaller screens*/
-@media (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   header {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+  }
+
+  .nav-item {
+    margin-right: 2px;
+    margin-left: 2px;
+    font-size: 12px;
   }
 
   .header-content {
-    height: 700px;
+    height: 500px;
   }
 
   #video {
     width: 97%;
-    height: 380px;
+    height: 480px;
   }
 
   #welcome-text {
-    padding-top: 20px;
+    padding-top: 40px;
     font-size: 30px;
     margin-bottom: 5px;
   }
 
   .tribal-image {
-    width: 100%;
-    height: 250px;
+    width: 80%;
+    height: 300px;
   }
 
   .top-hr {
@@ -496,123 +505,17 @@ footer {
     margin-top: 80px;
   }
 
-  #vid {
-    display: none;
-  }
-
-  .testimonial-container {
-    background-image: url("../images/gold-black.jpg");
-  }
-}
-
-@media (max-width: 760px) {
-  header {
-    margin-bottom: 30px;
-  }
-
-  .header-content {
-    height: 580px;
-  }
-
-  #video {
-    width: 98%;
-    height: 550px;
-  }
-
-  #welcome-text {
-    padding-top: 40px;
-    font-size: 50px;
-    margin-bottom: 10px;
-  }
-
-  .tribal-image {
-    width: 75%;
-    height: 300px;
-  }
-
-  .top-hr {
-    height: 10px;
-    width: 50%;
-  }
-
-  .triangle-img {
-    bottom: 5px;
-    height: 50px;
-  }
-
-  .gateway-box {
-    background-image: url("../images/background.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-
-  .mission-box .col-md-12 {
-    padding-top: 50px;
-  }
-
-  .mission-text {
-    font-size: 2rem;
-  }
-
-  .mission-statement {
-    margin-bottom: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 1.5rem;
-    margin-top: 20px;
-  }
-
-  .prize-container {
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-
-  .prize-box {
-    padding: 15px;
-  }
-
-  .prize-box h1 {
-    font-size: 1.8rem;
-  }
-
-  .picture-slide {
-    width: 75%;
-    height: 350px;
-  }
-
-  .visiting-text {
-    font-size: 1.8rem;
-  }
-
-  .visiting-text2 {
-    font-size: 1.5rem;
-  }
-
-  #testimonial-text {
-    font-size: 2rem;
-    margin-top: 80px;
-  }
-
-  #vid {
-    display: none;
-  }
-
-  .testimonial-container {
-    background-image: url("../images/gold-black.jpg");
-  }
-}
-
-@media (max-width: 1024px) {
-  header {
-    padding: 10px;
-  }
-
-  .header-content {
-    height: 700px;
+  .testimonial-carousel {
     width: 100%;
   }
 
-  footer {
-    margin: 0px;
+  .testifier {
+    font-size: 1.5rem;
+  }
+
+  .d-flex img {
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
   }
 }
