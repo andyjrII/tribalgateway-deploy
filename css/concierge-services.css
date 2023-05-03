@@ -1,0 +1,116 @@
+/* concierge service */
+
+.concierge-header {
+  height: 700px;
+  width: 100%;
+  background-color: #000000;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.concierge-image {
+  position: relative;
+  top: 40px;
+  background-image: url("../images/airport-concierge-Icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.concierge-triangle {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 80px;
+}
+
+.title-text {
+  color: var(--main-color);
+}
+
+.main-lead {
+  padding-top: 50px;
+  background-color: rgb(122, 108, 2, 0.5);
+}
+
+.concierge-form {
+  padding: 30px;
+  margin: 0 0 50px 50px;
+  background-image: url(../images/Layer.jpg);
+  background-size: contain;
+}
+
+hr {
+  height: 5px;
+  background-color: var(--main-color);
+}
+
+.input-group-text {
+  color: var(--main-color);
+}
+
+input[type="number"] {
+  width: 80px;
+}
+
+.radio-btn {
+  margin: 10px;
+}
+
+.cart {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
+/* Media Queries for smaller screens */
+
+@media (max-width: 480px) {
+  .concierge-header {
+    height: 450px;
+  }
+
+  .concierge-triangle {
+    position: absolute;
+    height: 60px;
+    top: 500px;
+  }
+
+  .main-lead {
+    padding-top: 25px;
+  }
+
+  .concierge-form {
+    padding: 30px;
+    margin: 0 0 25px 0px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+  .concierge-header {
+    height: 650px;
+  }
+
+  .concierge-triangle {
+    position: absolute;
+    height: 60px;
+    top: 555px;
+  }
+
+  .main-lead {
+    padding-top: 25px;
+  }
+
+  .concierge-form {
+    padding: 30px;
+    margin: 0 0 25px 0px;
+  }
+
+  .col-sm-6,
+  .col-sm-4,
+  .col-sm-3,
+  .col-sm-5 {
+    width: 100%;
+  }
+}

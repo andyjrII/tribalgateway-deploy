@@ -17,18 +17,12 @@
     />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="../css/visa-style.css" />
-
-    <!--Scroll Reveal JS library-->
-    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
-    <video id="visa-video" autoplay muted loop poster="../images/tribal.png">
-      <source src="../video/background.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
     <header>
       <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
         <div class="container-fluid">
+          <a class="navbar-brand" href="/">Tribal Gateway</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -71,16 +65,25 @@
         </div>
       </nav>
     </header>
-    <div class="pt-5 text-center border-bottom video-overlay">
-      <h1 class="display-4 fw-bold text-white" id="visa-text">
-        Visa on Arrival (VOA)
-      </h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4 text-white fs-2 text">Hello from Nigeria!</p>
-        <p class="lead mb-4 text-white fs-4 text">
-          So excited that you will be visiting Nigeria soon! Our goal is to make
-          your journey as smooth as possible.
-        </p>
+
+    <div class="container-fluid">
+      <div class="px-4 pt-5 my-5 text-center border-bottom" id="voa-image">
+        <h1 class="display-4 fw-bold">Visa on Arrival (VOA)</h1>
+        <div class="col-lg-10 mx-auto voa-text-box">
+          <p class="lead mb-4 fw-bold text-white">
+            <span class="intro-text">Hello from Nigeria!</span>
+          </p>
+          <p class="lead mb-4 fw-bold text-white">
+            <span class="intro-text">
+              So excited that you will be visiting Nigeria soon!
+            </span>
+          </p>
+          <p class="lead mb-4 fw-bold text-white">
+            <span class="intro-text">
+              Our goal is to make your journey as smooth as possible.
+            </span>
+          </p>
+        </div>
       </div>
     </div>
 
@@ -91,7 +94,7 @@
             In order to process your application to receive your Fast Track Visa
             On Arrival (VOA), we need the following information.
           </p>
-          <form class>
+          <form>
             <div class="row g-3">
               <div class="col-sm-7">
                 <div class="input-group mb-3">
@@ -213,19 +216,108 @@
                 </div>
               </div>
 
-              <div class="col-sm-12">
+              <div class="col-sm-7">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Are others traveling with you?
+                  </span>
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="others-traveling"
+                    id="others-no"
+                    value="no"
+                  />
+                  <label class="btn btn-dark" for="others-no">No</label>
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="others-traveling"
+                    id="others-yes"
+                    value="yes"
+                    checked
+                  />
+                  <label class="btn btn-dark" for="others-yes">Yes</label>
+                </div>
+              </div>
+
+              <div class="col-sm-5" id="others-number">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    How many?
+                  </span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="0"
+                    min="1"
+                    max="99"
+                    required
+                  />
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <h5 class="mb-3">
+                Your VOA includes Airport Arrival and Departure Escort. You will
+                be assisted and escorted for the entire process.
+              </h5>
+
+              <h6 class="mb-3">
+                Will someone be in Nigeria to greet you at the airport? If yes,
+                then please answer below.
+              </h6>
+
+              <div class="col-sm-6">
                 <div class="input-group mb-3">
                   <span
                     class="input-group-text bg-dark text-wrap"
-                    for="meeting-name"
+                    for="relative-name"
                   >
-                    Name of the Person Who's Meeting you at the Airport
+                    Relative Name
                   </span>
                   <input
                     type="text"
                     class="form-control"
-                    id="meeting-name"
-                    name="meeting-name"
+                    id="relative-name"
+                    name="relative-name"
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="input-group mb-3">
+                  <span
+                    class="input-group-text bg-dark text-wrap"
+                    for="relative-phone"
+                  >
+                    Relative Phone#
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="relative-phone"
+                    name="relative-phone"
+                  />
+                </div>
+              </div>
+
+              <h6 class="mb-3">Emergency Contact in Home Country</h6>
+
+              <div class="col-sm-6">
+                <div class="input-group mb-3">
+                  <span
+                    class="input-group-text bg-dark text-wrap"
+                    for="emergency-name"
+                  >
+                    Name
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="emergency-name"
+                    name="emergency-name"
                     required
                   />
                 </div>
@@ -235,18 +327,84 @@
                 <div class="input-group mb-3">
                   <span
                     class="input-group-text bg-dark text-wrap"
-                    for="their-phone"
+                    for="emergency-phone"
                   >
-                    Their Phone#
+                    Phone#
                   </span>
                   <input
                     type="text"
                     class="form-control"
-                    id="their-phone"
-                    name="their-phone"
-                    required
+                    id="emergency-phone"
+                    name="emergency-phone"
                   />
                 </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <h5 class="mb-3">Transportation</h5>
+
+              <h6 class="mb-3">
+                Please indicate if you will need transportation on the day of
+                your Arrival and Departure
+              </h6>
+
+              <div class="form-check form-switch col-sm-12">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="airport-house"
+                  value="60"
+                />
+                <label class="form-check-label" for="airport-house">
+                  I will need transportation from the airport to my housing
+                  accommodations on the day of my Arrival. ($60)
+                </label>
+              </div>
+
+              <div class="form-check form-switch col-sm-12">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="house-airport"
+                  value="60"
+                />
+                <label class="form-check-label" for="house-airport">
+                  I will need transportation from my housing accommodation to
+                  the airport of the day of my Departure. ($60)
+                </label>
+              </div>
+
+              <div class="form-check form-switch col-sm-12">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="relative-airport"
+                  value="100"
+                />
+                <label class="form-check-label" for="relative-airport">
+                  For my arrival, I will need transportation for my Relative to
+                  be picked up and brought to the airport to greet me, and then
+                  take us both to our accommodation from the airport ($100)
+                </label>
+              </div>
+
+              <div class="form-check form-switch col-sm-12">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="relative-house"
+                  value="60"
+                />
+                <label class="form-check-label" for="relative-house">
+                  I will also need this for my Departure, to have my My Relative
+                  dropped off, after seeing me off and leaving the airport.
+                  ($100).
+                </label>
               </div>
 
               <div class="col-sm-12">
@@ -257,66 +415,127 @@
             </div>
           </form>
         </div>
-        <div class="col-md-5" id="text-box">
-          <p class="fs-5 text text-white">
-            Once payment is received you will receive your receipt with your
-            client number. You will need to use your client number to upload and
-            email the following documents in order to process your VOA Approval
-            Letter.
-          </p>
-          <ol class="list-group list-group-numbered">
-            <li class="list-group-item">Copy of Passport Data Page</li>
-            <li class="list-group-item">Copy of your flight itinerary</li>
-            <li class="list-group-item">
-              Passport Photo (headshot of you with white background)
-            </li>
-          </ol>
-          <p class="fs-5 text text-white">
-            Once you've been approved, you'll receive a notification of your
-            approval. However, you will receive your official approval VOA
-            letter from the Nigerian Embassy within 5 days of your flight. This
-            is done in case there are any changes to your flight, since your
-            letter will have your identifying flight information.
-          </p>
-        </div>
-      </div>
-      <div class="container-fluid my-5 row" id="important-box">
-        <div class="col-md-6 mx-auto rounded" id="important-inner-box">
-          <h1 class="text-warning text-center display-5 fw-bold lh-1 mb-3">
-            Important!
-          </h1>
 
-          <p class="lead text-center text-white">
-            You'll need this letter to board your plane.
-          </p>
-          <p class="lead text-center text-white">
-            Once you arrive in Lagos, Nigeria your Immigration Officer will
-            greet you and then escort you to the Immigration Office to receive
-            your Visa and Entry Stamp.
-          </p>
-          <p class="lead text-center text-white">
-            Once you have your Visa you'll be escorted to retrieve your luggage
-            and assisted through Customs. Your loved one will be waiting for you
-            right outside of the Security Doors.
-          </p>
-          <ol class="list-group list-group-numbered">
-            <li class="list-group-item">VOA 750 usd if paid in full</li>
-            <li class="list-group-item">
-              $775 if you're choosing the payment plan
-            </li>
-            <li class="list-group-item">
-              If you're making a security deposit of $100*. Then you can make
-              payments for the balance. Balance must be paid in full 15 days
-              before your departure.
-            </li>
-          </ol>
+        <div class="col-md-5 text-box">
+          <div id="voa-process" class="row">
+            <h1 class="text-warning text-center display-5 fw-bold lh-1 mb-3">
+              VOA Process
+            </h1>
+            <p class="lead text-center text-white">
+              Once payment is received you will receive your receipt with your
+              client number. You will need to use your client number to upload
+              and email the following documents in order to process your VOA
+              Approval Letter.
+            </p>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">Copy of Passport Data Page</li>
+              <li class="list-group-item">Copy of your flight itinerary</li>
+              <li class="list-group-item">
+                Passport Photo (headshot of you with white background)
+              </li>
+            </ol>
+            <p class="lead text-center text-white">
+              Once you've been approved, you'll receive a notification of your
+              approval. However, you will receive your official approval VOA
+              letter from the Nigerian Embassy within 5 days of your flight.
+              This is done in case there are any changes to your flight, since
+              your letter will have your identifying flight information.
+            </p>
+          </div>
+
+          <div class="row" id="important-box">
+            <h1 class="text-warning text-center display-5 fw-bold lh-1 mb-3">
+              Important!
+            </h1>
+            <p class="lead text-center text-white">
+              You'll need this letter to board your plane.
+            </p>
+            <p class="lead text-center text-white">
+              Once you arrive in Lagos, Nigeria your Immigration Officer will
+              greet you and then escort you to the Immigration Office to receive
+              your Visa and Entry Stamp.
+            </p>
+            <p class="lead text-center text-white">
+              Once you have your Visa you'll be escorted to retrieve your
+              luggage and assisted through Customs. Your loved one will be
+              waiting for you right outside of the Security Doors.
+            </p>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">VOA 750 usd if paid in full</li>
+              <li class="list-group-item">
+                If you're making a security deposit of $100*. <br />
+                Then you can choose to divide the balance by 2 or 3 payments.
+                Must be paid in full before 15days of your flight.
+              </li>
+            </ol>
+          </div>
+
+          <div class="row" id="warning-box">
+            <p class="text-warning lead text-center">
+              *Security Deposit is non-refundable. Any remaining balance will be
+              given as credit.
+            </p>
+          </div>
         </div>
       </div>
-      <p class="text-warning text-center">
-        *Security Deposit is non-refundable. Any remaining balance will be given
-        as credit.
-      </p>
     </div>
+
+    <!-- cart -->
+
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="card col-md-4 cart shadow-lg rounded">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Your cart</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">VOA</h6>
+              </div>
+              <span class="text-muted">$750</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Transportation</h6>
+              </div>
+              <span class="text-muted" id="transport-span">$0</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">VAT/TAX</h6>
+              </div>
+              <span class="text-muted">$15</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Subtotal (USD):</span>
+              <strong id="subtotal-strong">$765</strong>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Discount:</h6>
+              </div>
+              <span class="text-success">−$75</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD):</span>
+              <strong id="total-strong">$690</strong>
+            </li>
+          </ul>
+          <form class="card p-2">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Discount code"
+              />
+              <button type="submit" class="btn btn-secondary">Redeem</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <footer class="container text-center">
       <p id="copyright">Copyright Tribal Gateway &COPY; 2023</p>
     </footer>
@@ -327,18 +546,10 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!--Local JS file-->
-    <script src="../main.js"></script>
+    <script src="../js/voa.js"></script>
   </body>
 </html>

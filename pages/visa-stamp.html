@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visa Stamp Extension</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="/images/tribal.png" type="image/x-icon" />
+
+    <!--Bootstrap library-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/visa-style.css" />
+
+    <!--Scroll Reveal JS library-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Tribal Gateway</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login3.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register3.html">Signup</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="px-4 pt-5 my-5 text-center border-bottom" id="stamp-image">
+      <div id="title-box">
+        <h1 class="display-4 fw-bold">
+          <span>Visa Stamp Extensions</span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="container-fluid my-5">
+      <div class="row">
+        <div class="col-md-8 text-box">
+          <div id="voa-process" class="row">
+            <p class="lead text-center text-white">
+              When you arrive to Nigeria, everyone receives a 30 Day Entry
+              Stamp.
+            </p>
+            <p class="lead text-center text-white">
+              If you would like to extend your stay then you can purchase an
+              extension up to 90 days.
+            </p>
+            <p class="lead text-center text-white">
+              If you need more than 90 days then please contact us through our
+              Visa Services Department. (Provide link to contact us here)
+            </p>
+          </div>
+
+          <div class="row" id="important-box">
+            <h1 class="text-warning text-center display-5 fw-bold lh-1 mb-3">
+              Same Day Service
+            </h1>
+            <p class="lead text-center text-white">
+              You will need to set an appointment to bring in your passport to
+              have it stamped the same day.
+            </p>
+            <p class="lead text-center text-white">
+              Once your payment is received you'll receive an email confirmation
+              and be able to select t the available appointment times.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 visa-form rounded" id="stamp-form">
+          <form>
+            <div class="row g-3">
+              <div class="col-sm-12">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap" for="name">
+                    Name
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Phone#
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Email
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="input-group mb-3">
+                  <label
+                    class="input-group-text bg-dark text-wrap"
+                    for="driver-service"
+                  >
+                    Nigerian State you are Visiting
+                  </label>
+                  <select
+                    class="form-select driver-service"
+                    id="driver-service"
+                  >
+                    <option value="">Choose...</option>
+                    <option value="">Abia</option>
+                    <option value="">Abuja</option>
+                    <option value="">Adamawa</option>
+                    <option value="">Akwa Ibom</option>
+                    <option value="">Anambra</option>
+                    <option value="">Bauchi</option>
+                    <option value="">Bayelsa</option>
+                    <option value="">Benue</option>
+                    <option value="">Borno</option>
+                    <option value="">Cross River</option>
+                    <option value="">Delta</option>
+                    <option value="">Ebonyi</option>
+                    <option value="">Edo</option>
+                    <option value="">Ekiti</option>
+                    <option value="">Enugu</option>
+                    <option value="">Imo</option>
+                    <option value="">Jigawa</option>
+                    <option value="">Kaduna</option>
+                    <option value="">Kano</option>
+                    <option value="">Katsina</option>
+                    <option value="">Kebbi</option>
+                    <option value="">Kogi</option>
+                    <option value="">Kwara</option>
+                    <option value="">Lagos</option>
+                    <option value="">Nassarawa</option>
+                    <option value="">Niger</option>
+                    <option value="">Ondo</option>
+                    <option value="">Ogun</option>
+                    <option value="">Osun</option>
+                    <option value="">Oyo</option>
+                    <option value="">Plateau</option>
+                    <option value="">Rivers</option>
+                    <option value="">Sokoto</option>
+                    <option value="">Taraba</option>
+                    <option value="">Yobe</option>
+                    <option value="">Zamfara</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <button class="w-25 btn btn-danger" type="submit">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container text-center">
+      <p id="copyright">Copyright Tribal Gateway &COPY; 2023</p>
+    </footer>
+
+    <!--Linking Bootstrap Javascript-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -16,7 +16,7 @@
 
     <!-- Linking local css style file -->
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/concierge-services-style.css" />
+    <link rel="stylesheet" href="../css/concierge-services.css" />
 
     <!-- Links for icons-->
     <link
@@ -43,367 +43,353 @@
     ></script>
   </head>
   <body>
-    <div class="concierge-header container-fluid">
-      <header>
-        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarCollapse"
-              aria-controls="navbarCollapse"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav me-auto ms-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Gallery</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Events</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Team</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/login3.html">Login</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/register3.html">Signup</a>
-                </li>
-              </ul>
-            </div>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Tribal Gateway</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/login3.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/register3.html">Signup</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
-      <!--container for the top image and triangle image-->
-
-      <div class="container text-center">
-        <img
-          class="tribal-image"
-          src="../images/airport-concierge-Icon.png"
-          alt="logo"
-        />
-        <hr class="top-hr" />
-        <img
-          src="../images/triangle.png"
-          alt="triangles"
-          class="triangle-img concierge-triangle"
-        />
-      </div>
+    <!--container for the top image and triangle image-->
+    <div class="container-fluid">
+      <div class="px-4 pt-5 my-5 text-center concierge-image"></div>
+    </div>
+    <div class="container-fluid">
+      <img
+        src="../images/triangle.png"
+        alt="triangles"
+        class="concierge-triangle"
+      />
     </div>
 
     <!-- Main body contents -->
 
-    <main class="container">
-      <div class="py-5 text-center">
-        <h1>
-          <span class="title-text rounded bg-dark">
+    <main class="main-lead">
+      <div class="container-fluid">
+        <div class="py-5 text-center">
+          <h1 class="title-text display-4 fw-bold">
             AIRPORT TRANSPORTATION SERVICES
-          </span>
-        </h1>
-        <p class="text-md-center">
-          Thank you for the opportunity to allow us to make your visit to
-          Nigeria as stress free as possible. Our Airport Transportation
-          Services will be waiting to get you at the Airport and safely get you
-          to your destination. Customize your experience please select your
-          preferences below.
-        </p>
-      </div>
+          </h1>
+          <p class="text-md-center text-white lead">
+            Thank you for the opportunity to allow us to make your visit to
+            Nigeria as stress free as possible. Our Airport Transportation
+            Services will be waiting to get you at the Airport and safely get
+            you to your destination. Customize your experience please select
+            your preferences below.
+          </p>
+        </div>
 
-      <!-- Transport Services form -->
+        <!-- Transport Services form -->
 
-      <div class="row">
-        <div class="col-lg-12 concierge-form shadow-lg rounded">
-          <form class="needs-validation">
-            <div class="row g-3">
-              <h4 class="mb-3">Personal Information</h4>
+        <div class="row">
+          <div class="col-lg-11 concierge-form rounded">
+            <form>
+              <div class="row g-3">
+                <h4 class="mb-3">Personal Information</h4>
 
-              <div class="col-sm-4">
-                <div class="input-group mb-3">
-                  <span class="input-group-text bg-dark text-wrap"> Name </span>
-                  <input type="text" class="form-control" id="name" required />
-                  <div class="invalid-feedback">Valid Name is required.</div>
-                </div>
-              </div>
-
-              <div class="col-sm-4">
-                <div class="input-group mb-3">
-                  <span class="input-group-text bg-dark text-wrap">
-                    Phone#
-                  </span>
-                  <input type="tel" class="form-control" required />
-                  <div class="invalid-feedback">
-                    Valid Phone Number is required.
+                <div class="col-sm-4">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text bg-dark text-wrap">
+                      Name
+                    </span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
                   </div>
                 </div>
-              </div>
 
-              <div class="col-sm-4">
-                <div class="input-group mb-3">
-                  <span class="input-group-text bg-dark text-wrap">
-                    Email
-                  </span>
-                  <input type="email" class="form-control" />
-                  <div class="invalid-feedback">
-                    Please enter a valid Email address for shipping updates.
+                <div class="col-sm-4">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text bg-dark text-wrap">
+                      Phone#
+                    </span>
+                    <input type="tel" class="form-control" required />
                   </div>
                 </div>
-              </div>
 
-              <hr class="my-4" />
-
-              <div class="col-sm-4">
-                <div class="input-group mb-3">
-                  <span class="input-group-text bg-dark text-wrap">
-                    Date of Arrival
-                  </span>
-                  <input type="date" class="form-control" required />
-                  <div class="invalid-feedback">
-                    Date of arrival is required.
+                <div class="col-sm-4">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text bg-dark text-wrap">
+                      Email
+                    </span>
+                    <input type="email" class="form-control" />
                   </div>
                 </div>
-              </div>
 
-              <div class="col-sm-4">
-                <div class="input-group mb-3">
-                  <span class="input-group-text bg-dark text-wrap">
-                    Time of Arrival
-                  </span>
-                  <input type="time" class="form-control" required />
-                  <div class="invalid-feedback">
-                    Time of arrival is required.
+                <hr class="my-4" />
+
+                <div class="col-sm-4">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text bg-dark text-wrap">
+                      Date of Arrival
+                    </span>
+                    <input type="date" class="form-control" required />
                   </div>
                 </div>
-              </div>
 
-              <div class="col-sm-4">
-                <div class="input-group mb-3">
-                  <span class="input-group-text bg-dark text-wrap">
-                    Date of Departure
-                  </span>
-                  <input type="date" class="form-control" required />
-                  <div class="invalid-feedback">
-                    Date of your departure is required.
+                <div class="col-sm-4">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text bg-dark text-wrap">
+                      Time of Arrival
+                    </span>
+                    <input type="time" class="form-control" required />
                   </div>
                 </div>
-              </div>
 
-              <div class="col-sm-6">
-                <div class="input-group mb-3">
-                  <span class="input-group-text bg-dark text-wrap">
-                    Airline
-                  </span>
-                  <input type="text" class="form-control" required />
-                  <div class="invalid-feedback">
-                    Please enter the name of your Airline.
+                <div class="col-sm-4">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text bg-dark text-wrap">
+                      Date of Departure
+                    </span>
+                    <input type="date" class="form-control" required />
                   </div>
                 </div>
-              </div>
 
-              <div class="col-sm-6">
+                <div class="col-sm-6">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text bg-dark text-wrap">
+                      Airline
+                    </span>
+                    <input type="text" class="form-control" required />
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text bg-dark text-wrap">
+                      How many persons will be arriving
+                    </span>
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="1"
+                      min="1"
+                      max="99"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <h4 class="mb-3">Transport Services</h4>
+
+                <div class="col-auto">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text bg-dark text-wrap">
+                      How many pieces of luggage will you have? If you need a
+                      sub or van then there may be an extra charge
+                    </span>
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="0"
+                      min="1"
+                      max="99"
+                    />
+                  </div>
+                </div>
+
                 <div class="input-group mb-3">
                   <span class="input-group-text bg-dark text-wrap">
-                    How many persons will be arriving
+                    Will you need the driver to make several stops along the
+                    way? If so then it's an additional $15.
                   </span>
-                  <input
-                    type="number"
-                    class="form-control"
-                    placeholder="1"
-                    min="1"
-                    max="99"
-                    required
-                  />
-                  <div class="invalid-feedback">Please a valid number.</div>
-                </div>
-              </div>
-
-              <hr class="my-4" />
-
-              <h4 class="mb-3">Transport Services</h4>
-
-              <div class="col-auto">
-                <div class="input-group mb-3">
-                  <span class="input-group-text bg-dark text-wrap">
-                    How many pieces of luggage will you have? If you need a sub
-                    or van then there may be an extra charge:
-                  </span>
-                  <input
-                    type="number"
-                    class="form-control"
-                    placeholder="0"
-                    min="1"
-                    max="99"
-                    required
-                  />
-                  <div class="invalid-feedback">Please a valid number.</div>
-                </div>
-              </div>
-
-              <div class="input-group mb-3">
-                <span class="input-group-text bg-dark text-wrap">
-                  Will you need the driver to make several stops along the way?
-                  If so then it's an additional $15.
-                </span>
-                <input
-                  type="radio"
-                  class="btn-check"
-                  name="several-stops"
-                  id="several-stops"
-                  value="15"
-                />
-                <label class="btn btn-dark" for="several-stops">Yes</label>
-                <input
-                  type="radio"
-                  class="btn-check"
-                  name="several-stops"
-                  id="no-stops"
-                  value="0"
-                  checked
-                />
-                <label class="btn btn-dark" for="no-stops">No</label>
-              </div>
-
-              <div class="col-auto">
-                <div class="input-group mb-3">
-                  <label
-                    class="input-group-text bg-dark text-wrap"
-                    for="driver-service"
-                  >
-                    I need driver service for
-                  </label>
-                  <select
-                    class="form-select driver-service"
-                    id="driver-service"
-                  >
-                    <option value="0">Choose...</option>
-                    <option value="60">Arrival Only $60</option>
-                    <option value="60">Departure Only $60</option>
-                    <option value="115">Both Arrival and Departure $115</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="input-group mb-0">
-                <div class="col-sm-12">
-                  <span class="input-group-text bg-dark text-wrap">
-                    What is the address of your destination. If it is more than
-                    50km from the airport there may be additional charges.
-                  </span>
-                </div>
-                <div class="col-sm-12">
-                  <input type="text" class="form-control" required />
-                  <div class="invalid-feedback">Please a valid number.</div>
-                </div>
-              </div>
-
-              <hr class="my-4" />
-
-              <h4 class="mb-3">Emergency Contact in Home Country</h4>
-
-              <div class="col-sm-4">
-                <div class="input-group mb-3">
-                  <span class="input-group-text bg-dark text-wrap"> Name </span>
-                  <input type="text" class="form-control" />
-                </div>
-              </div>
-
-              <div class="col-sm-4">
-                <div class="input-group mb-3">
-                  <span class="input-group-text bg-dark text-wrap">
-                    Phone#
-                  </span>
-                  <input type="tel" class="form-control" />
-                </div>
-              </div>
-
-              <hr class="my-4" />
-
-              <h4 class="mb-3">Security</h4>
-
-              <div class="input-group mb-3">
-                <span class="input-group-text bg-dark text-wrap">
-                  Would you like to have a security officer to escort you during
-                  your stay?
-                </span>
-                <input
-                  type="radio"
-                  class="btn-check"
-                  name="security"
-                  id="security-no"
-                  value="no"
-                />
-                <label class="btn btn-dark" for="security-no">No</label>
-                <input
-                  type="radio"
-                  class="btn-check"
-                  name="security"
-                  id="security-yes"
-                  value="yes"
-                  checked
-                />
-                <label class="btn btn-dark" for="security-yes">Yes</label>
-              </div>
-
-              <div class="officers-box">
-                <div class="input-group mb-3">
                   <input
                     type="radio"
                     class="btn-check"
-                    name="officer"
-                    id="private"
-                    value="40"
+                    name="several-stops"
+                    id="several-stops"
+                    value="15"
                   />
-                  <label class="btn btn-dark radio-btn rounded" for="private">
-                    Private Officer $40 daily
-                  </label>
+                  <label class="btn btn-dark" for="several-stops">Yes</label>
                   <input
                     type="radio"
                     class="btn-check"
-                    name="officer"
-                    id="police"
-                    value="60"
+                    name="several-stops"
+                    id="no-stops"
+                    value="0"
+                    checked
                   />
-                  <label class="btn btn-dark radio-btn rounded" for="police">
-                    Police Officer $60
-                  </label>
+                  <label class="btn btn-dark" for="no-stops">No</label>
                 </div>
 
-                <div class="form-check form-switch col-sm-12">
+                <div class="col-auto">
+                  <div class="input-group mb-3">
+                    <label
+                      class="input-group-text bg-dark text-wrap"
+                      for="driver-service"
+                    >
+                      I need driver service for
+                    </label>
+                    <select
+                      class="form-select driver-service"
+                      id="driver-service"
+                    >
+                      <option value="0">Choose...</option>
+                      <option value="60">Arrival Only $60</option>
+                      <option value="60">Departure Only $60</option>
+                      <option value="115">
+                        Both Arrival and Departure $115
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="input-group mb-0">
+                  <div class="col-sm-12">
+                    <span class="input-group-text bg-dark text-wrap">
+                      What is the address of your destination. If it is more
+                      than 50km from the airport there may be additional
+                      charges.
+                    </span>
+                  </div>
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control" required />
+                  </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <h4 class="mb-3">Emergency Contact in Home Country</h4>
+
+                <div class="col-sm-4">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text bg-dark text-wrap">
+                      Name
+                    </span>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text bg-dark text-wrap">
+                      Phone#
+                    </span>
+                    <input type="tel" class="form-control" />
+                  </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <h4 class="mb-3">Security</h4>
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Would you like to have a security officer to escort you
+                    during your stay?
+                  </span>
                   <input
-                    class="form-check-input"
-                    type="checkbox"
-                    role="switch"
-                    id="armed"
-                    value="75"
-                    disabled
+                    type="radio"
+                    class="btn-check"
+                    name="security"
+                    id="security-no"
+                    value="no"
                   />
-                  <label class="form-check-label" for="armed">
-                    Visibly Armed $75 daily surcharge (in addition to above
-                    Officer Charge)
-                  </label>
+                  <label class="btn btn-dark" for="security-no">No</label>
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="security"
+                    id="security-yes"
+                    value="yes"
+                    checked
+                  />
+                  <label class="btn btn-dark" for="security-yes">Yes</label>
                 </div>
+
+                <div class="officers-box">
+                  <div class="input-group mb-3">
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="officer"
+                      id="private"
+                      value="40"
+                    />
+                    <label class="btn btn-dark radio-btn rounded" for="private">
+                      Private Officer $40 daily
+                    </label>
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="officer"
+                      id="police"
+                      value="60"
+                    />
+                    <label class="btn btn-dark radio-btn rounded" for="police">
+                      Police Officer $60
+                    </label>
+                  </div>
+
+                  <div class="form-check form-switch col-sm-12">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="armed"
+                      value="75"
+                      disabled
+                    />
+                    <label class="form-check-label" for="armed">
+                      Visibly Armed $75 daily surcharge (in addition to above
+                      Officer Charge)
+                    </label>
+                  </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <button class="w-25 btn btn-danger" type="submit">
+                  Submit
+                </button>
               </div>
-
-              <hr class="my-4" />
-
-              <button class="w-25 btn btn-danger" type="submit">Submit</button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </main>
@@ -453,9 +439,10 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!--Local Javascript file-->
-    <script type="text/javascript" src="../main.js"></script>
     <script type="text/javascript" src="../js/transport.js"></script>
   </body>
 </html>

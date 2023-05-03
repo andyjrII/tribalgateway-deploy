@@ -1,6 +1,3 @@
-/*Import Poppins Font*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 #visa-video {
   height: 500px;
   width: 100%;
@@ -10,8 +7,47 @@
   right: 0;
 }
 
+#voa-image {
+  background-image: url("../images/voa.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+
+#stamp-image {
+  background-image: url("../images/Visa\ with\ Stamp.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+
+.voa-text-box {
+  margin-top: 100px;
+}
+
+.intro-text {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#title-box h1 {
+  margin: 100px;
+}
+
+#title-box h1 span {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 #visa-text {
-  margin-top: 30px;
+  padding-top: 40px;
 }
 
 .visa-form {
@@ -20,22 +56,83 @@
   background-size: contain;
 }
 
+#stamp-form form {
+  margin-top: 60px;
+}
+
 .input-group-text {
   color: var(--main-color);
 }
 
-#text-box {
-  padding: 30px;
-}
-
-#important-box {
+.text-box {
   background-image: url("../images/native-pattern.jpg");
   background-size: contain;
-  margin-left: 1px;
 }
 
-#important-inner-box {
+#important-box,
+#voa-process,
+#warning-box {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
-  margin: 10px;
+}
+
+.cart {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  #voa-process h1,
+  #important-box h1 {
+    font-size: 1.5rem;
+  }
+
+  #voa-process p,
+  #important-box p {
+    font-size: 1rem;
+  }
+
+  #voa-image h1,
+  #title-box h1 span {
+    font-size: 1.8rem;
+  }
+
+  #title-box h1 span {
+    padding: 1px;
+    border-radius: 2px;
+  }
+
+  #title-box h1 {
+    margin: 65px;
+  }
+
+  .intro-text {
+    font-size: 1.2rem;
+  }
+
+  #voa-image,
+  #stamp-image {
+    background-size: 100% 100%;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 400px;
+  }
+
+  .voa-text-box {
+    margin-top: 40px;
+  }
+
+  .visa-form p,
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  h6 {
+    font-size: 0.9rem;
+  }
+
+  .input-group-text,
+  .form-check-label {
+    font-size: 13px;
+  }
 }

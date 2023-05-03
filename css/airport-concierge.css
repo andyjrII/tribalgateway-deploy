@@ -5,3 +5,12 @@
   background-size: cover;
   color: rgb(255, 255, 255);
 }
+
+div h1,
+div a {
+  color: aliceblue;
+}
+
+div p {
+  color: rgb(225, 230, 234);
+}
